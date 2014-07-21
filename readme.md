@@ -36,7 +36,7 @@ Strip out and replace mock content with dynamic variables used by the EEMS grid 
 	--- layouts
 	--- pages
 	--- partials
-	---content-modules
+	--- content-modules
 	
 ### Layouts
 A ```layout``` defines the headers, footers, branding and theme to be used for any given email. A ```layout``` is defined within each ```page```.
@@ -51,10 +51,3 @@ Some ```partials``` will define specific content, or group of related content, a
 ### Content modules
 A ```content-module``` is a type of ```partial``` that defines some content (oh yes it does).   
 A ```content-module``` may represent a single piece of content, or may be a group of nested ```content-modules``` or ```partials``` that together form the ```content-module```.
-
-
-
-
-
-
-
