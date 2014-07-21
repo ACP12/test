@@ -1,0 +1,1 @@
+# Bookatable email framework
