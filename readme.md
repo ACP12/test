@@ -1,5 +1,14 @@
 # BAT Mail
 
+This is an email framework that will be used to create all of the the CRM and promotional email marketing. The 
+objectives are to:
+
+- Improve UX design
+- Modularise codebase for improved maintenance/dev
+- Allow for iterative module development/innovation
+- Improve performance (faster, smaller etc.)
+- Improve device/client accessibility
+
 ## Technology stack
 
 ### [Ink](http://zurb.com/ink/)
