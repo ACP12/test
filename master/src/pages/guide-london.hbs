@@ -1,0 +1,186 @@
+---
+title: Bookatable Guide
+region: London
+culture: en-GB
+layout: src/layouts/default.hbs
+published: false
+---
+<!-- HERO -->
+<table class="row">
+  <tr>
+    <td class="wrapper last theme-lemon">
+      <table class="twelve columns">
+        <tr>
+          <td class="theme-lemon center" align="center" valign="top">
+            <center>
+              {{> guide-hero}}
+            </center>
+          </td>
+          <td class="expander"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- HERO END -->
+{{> divider}}
+<!-- INTRO TEXT -->
+<table class="row">
+  <tr>
+    <td class="wrapper last theme-lemon">
+      <table class="twelve columns">
+        <tr>
+          <td class="theme-lemon" align="left" valign="top">
+            {{> guide-intro-text}}
+            {{subtract object.a 5}}
+            
+            {{#contains culture "en"}}
+             English
+            {{else}}
+                Not English.
+            {{/contains}}
+            
+            {{#is culture "en-GB"}}
+                <h1> culture = {{culture}}</h1>
+            {{else}}
+                <h1> other </h1>
+            {{/is}}
+            
+          </td>
+          <td class="expander"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- INTRO TEXT END -->
+{{> divider}}
+<!-- TOP BLOGS -->
+<table class="row">
+  <tr>
+    <td class="wrapper last theme-lemon">
+      <table class="twelve columns">
+        <tr>
+          <td class="theme-lemon" align="left" valign="top">    
+            {{> guide-top-blogs}}
+          </td>
+          <td class="expander"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- TOP BLOGS END -->
+{{> divider}}
+<!-- NEW RESTAURANTS -->
+<table class="block-grid two-up">
+  <tr>
+    <td>
+
+      {{> guide-new-rest-block }}
+
+    </td><td> <!-- Make sure the tags are directly next to each other -->
+
+      {{> guide-new-rest-block }}
+
+    </td>
+  </tr>
+</table>
+
+<table class="block-grid two-up">
+  <tr>
+    <td class="theme-soup">
+
+      {{> guide-new-rest-block }}
+
+    </td><td class="theme-gold"> <!-- Make sure the tags are directly next to each other -->
+
+      {{> guide-new-rest-block }}
+
+    </td>
+  </tr>
+</table>
+<!-- NEW RESTAURANTS END -->
+{{> divider}}
+<!-- DON'T MISS -->
+<table class="row">
+  <tr>
+    <td class="wrapper last theme-gold">
+      <table class="twelve columns">
+        <tr>
+          <td class="theme-gold" align="left" valign="top">    
+            {{> dontmiss-intro}}
+          </td>
+          <td class="expander"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<table class="row theme-pillar-box">
+  <tr>
+    <td class="wrapper">
+
+      <table class="nine columns theme-soup">
+        <tr>
+          <td>
+
+            {{> dontmiss-1}}
+
+          </td>
+          <td class="expander"></td>
+        </tr>
+      </table>
+
+    </td>
+    <td class="wrapper last">
+
+      <table class="three columns theme-pillar-box">
+        <tr>
+          <td>
+
+            {{> 2}}
+
+          </td>
+          <td class="expander"></td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+
+<table class="row theme-pillar-box">
+  <tr>
+    <td class="wrapper">
+
+      <table class="nine columns theme-soup">
+        <tr>
+          <td>
+
+            {{> dontmiss-1}}
+
+          </td>
+          <td class="expander"></td>
+        </tr>
+      </table>
+
+    </td>
+    <td class="wrapper last">
+
+      <table class="three columns theme-pillar-box">
+        <tr>
+          <td>
+
+            {{> 2}}
+
+          </td>
+          <td class="expander"></td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+<!-- TOP BLOGS END -->

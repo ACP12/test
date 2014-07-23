@@ -1,0 +1,53 @@
+
+
+// GENERIC STUFF
+body, .body {background: blue;}
+.divider{background: #ffffff; height:10px;min-height: 10px; max-height: 10px;}
+// OVERRIDES
+.pad-zero, td.pad-zero {padding:0;}
+table.columns .text-pad-bottom {padding-bottom: 10px;}
+table.columns .text-pad-top {padding-top: 10px;}
+
+// THEMES
+.theme-french {background: $bat-color-french-blue;}
+.theme-cerulean {background: $bat-color-cerulean;}
+.theme-gold {background: $bat-color-gold;}
+.theme-lemon {background: $lemon-color;}
+.theme-pillar-box {background: $bat-color-pillar-box;}
+.theme-soup {background: $bat-color-pea-soup;}
+.theme-white {background: $bat-color-white;}
+
+// This is the outside white border. It completely falls out of the normal flow of things (sorry about that)
+td.super-border-right, .super-border-right {padding-left:0; padding-right: 20px;}
+.super-border {padding-left:10px;padding-right:10px;}
+
+// star deal stuff
+table.mod-menu {width:265px;}
+table.mod-menu tr td {padding:15px;}
+table.mod-desc tr td {padding:15px;}
+table.mod-terms tr td.mod-terms-title {padding:15px 15px 0 15px;}
+table.mod-terms tr td.mod-terms-text {padding:0 15px 15px 15px;}
+table.mod-buttons tr td, table.mod-quote tr td {padding:5px 15px;}
+table.mod-review td.review-stars {padding: 5px 0 5px 15px;}
+table.mod-review td.review-number {padding:0 0 5px 15px;}
+
+
+table.mod-pref {border: 2px dashed orange;}
+table.mod-pref tr td.mod-pref-para {padding: 0 15px 15px 15px;}
+table.mod-pref tr td.mod-pref-para.first {padding: 15px 15px 15px 15px; color:red;}
+
+
+.quote-text, td.quote-text {
+  border-left: 5px solid $bat-color-gold;
+  color:$bat-color-light-gray;
+  font-family: $secondary-font-family; 
+  font-size: $font-lg; 
+  font-style: italic;
+  padding-left: 10px;
+}
+td.footer-text {font-size:$font-sm;padding-top:15px;}
+
+.pad-top {padding: 15px;}
+
+// make sure there are no ugly gaps which manifest themselves on linked images
+.mod-banner-td, .mod-banner-img, .mod-banner-a {line-height: 1;}

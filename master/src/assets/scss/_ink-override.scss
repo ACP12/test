@@ -1,0 +1,76 @@
+// kill default top padding of 10px
+td.wrapper {
+  padding-top: 0;
+}
+
+table.columns td,
+table.column td {
+  padding: 0; 
+}
+// kill 10px all over padding to simplify things
+.block-grid td {
+  padding: 0;
+}
+
+// font / line height stuff
+body, table.body, h1, h2, h3, h4, h5, h6, p, td { 
+  color: $dark-gray;
+  font-family: $base-font-family; 
+  line-height: 1;
+}
+
+p, h1, h2, h3, h4{ 
+  margin-bottom: $font-xxs;
+}
+
+h1 {font-size: $font-xxl;}
+h2 {font-size: $font-xl;}
+h3 {font-size: $font-lg;}
+h4 {font-size: $font-med}
+h5 {font-size: 44px;}
+h6 {font-size: 66px;}
+body, table.body, p, td {font-size: $font-med;line-height:1.4;}
+
+// change button stuff
+table.button td,
+table.tiny-button td,
+table.small-button td,
+table.medium-button td,
+table.large-button td {
+  display: block;
+  width: auto !important;
+  text-align: center;
+  background: $bat-color-pillar-box;
+  border: 1px solid $bat-color-pillar-box;
+  color: #ffffff;
+  padding: 8px 0;
+}
+
+.lead, p.lead, p.lede, p.leed {
+  font-size: $font-med + 2;
+  line-height:1.4;
+}
+
+table.secondary td {
+  background: $bat-color-french-blue;
+  border-color: $bat-color-french-blue;
+  color: $bat-color-white;
+}
+
+table.secondary td a {
+  color: $bat-color-white;
+}
+
+table.secondary:hover td {
+  background: $bat-color-french-blue !important;
+  color: $bat-color-white;
+}
+
+table.secondary:hover td a,
+table.secondary td a:visited,
+table.secondary:active td a {
+  color: #555 !important;
+}
+
+
+
