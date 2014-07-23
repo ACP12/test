@@ -7,9 +7,12 @@
   }
   
   table[class="body"] table.mod-menu {width:100% !important;}
-  
+  // make sure images are resized correctly for mobile
   table[class="body"] .review-stars img {width:135px !important; height: 26px;}
-  table[class="body"] img.icon-social-google {width:235px !important; height: 50px !important;}
+  table[class="body"] img.icon-social-google, 
+  table[class="body"] img.icon-social-facebook,
+  table[class="body"] img.icon-social-twitter{width:40px !important; height: 40px !important;margin-left:10%;}
+  table[class="body"] img.icon-social-ios{width:118px !important; height: 40px !important;}
   table[class="body"] table.mod-footer tr td {width:auto !important;border:1px solid red;}
   
   // prevent social buttons from becoming too small
@@ -26,4 +29,6 @@
   
   // stop ugly gap due to forced height on td. original height exists for the benefit of desktops clients.
   table[class="body"] .mod-banner-td {height:auto !important;}
+  // fix social button spacing
+  table[class="body"] .columns.mod-footer td.one{ width: 25%!important; }
 }
