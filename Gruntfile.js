@@ -1,10 +1,14 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
-    assemble:{
+
+      pkg: grunt.file.readJSON('package.json'),
+
+      assemble: {
       options: {
-        layout: 'src/layouts/default.hbs',
+          //layout: 'src/layouts/default.hbs',
+          layoutdir: 'src/layouts/',
+          layoutext: '.hbs',
         partials: ['src/partials/*.hbs'],
         data: ['data/*.{json,yml}'],
         flatten: true
@@ -15,7 +19,8 @@ module.exports = function(grunt) {
         }
       }
     },
-    clean: {
+
+      clean: {
       all: ['dist/*.html']
     },
     
@@ -80,8 +85,8 @@ module.exports = function(grunt) {
         options: {                       
           style: 'compact'
         },
-        files: {                         
-          'dist/assets/css/style.css': 'src/assets/scss/style.scss',
+          files: {
+              'dist/assets/css/style.css': 'src/assets/scss/style.scss'
         }
       }
     },
@@ -108,11 +113,11 @@ module.exports = function(grunt) {
     },
     watch: {
       options: {
-        livereload: true,
+          livereload: true
       },
       css: {
         files: 'src/assets/scss/*.scss',
-        tasks: 'sass',
+          tasks: 'sass'
       },
       template: {
         files: 'src/**/*.hbs',
