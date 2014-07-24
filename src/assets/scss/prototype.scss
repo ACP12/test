@@ -3,8 +3,8 @@
 // Extend variables
 // ----------------
 
-$gutter-width: 8px;
-$col-width: 41px;
+$gutter-width: 20px;
+$col-width: 30px;
 $col-total: 12;
 $btn-height: 44px;
 
@@ -60,7 +60,7 @@ $btn-height: 44px;
 
   &:hover {
     background: darken($bat-color-grey, 5%);
-    color: $bat-color-white;
+    color: $bat-color-white !important;
   }
 
   &.btn-block {
@@ -76,6 +76,12 @@ $btn-height: 44px;
     }
   }
 
+}
+
+.icon-marker {
+  display: inline-block;
+  font-size: inherit;
+  height: 12px;
 }
 
 .row {
@@ -135,18 +141,50 @@ $btn-height: 44px;
 
 // Pages
 // --------------
+.page-index,
+.page-styles,
+.page-prototypes {
+  margin: 48px auto 24px;
+
+  h5 {
+    font-size: 18px;
+    color: $bat-color-grey;
+  }
+}
 
 // Modules
 // --------------
+
 .mod-deal-local {
+
   background: $bat-color-pea-soup-lighter;
+  border-radius: 3px;
+
   h2 {
     margin: 0;
     padding: $font-xs;
     background: $bat-color-pea-soup-light;
+    color: $bat-color-pea-soup-dark;
+    border-radius: 3px 3px 0 0;
+    border-bottom: 1px solid $bat-color-white;
   }
   .mod-deal-local-body {
 
+    h3 {
+      color: $bat-color-cerulean;
+    }
+    p {
+      color: $bat-color-cerulean;
+    }
+  }
+
+}
+
+.star-rating {
+  display: inline-block;
+  img {
+    width: 25%;
   }
 }
+
 
