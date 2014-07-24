@@ -53,8 +53,8 @@ module.exports = function(grunt) {
           options: {
             service: 'Gmail',
             auth: {
-              user: 'yuppysoul@gmail.com',
-              pass: 'warren666'
+              user: 'lbtest08@gmail.com',
+              pass: 'lbtest01'
             }
           }
         },
@@ -63,7 +63,7 @@ module.exports = function(grunt) {
         },
         recipients: [
           {
-            email: 'ben.warren@bookatable.com',
+            email: 'yuppysoul@outlook.com',
             name: 'yuppysoul'
           }
         ]

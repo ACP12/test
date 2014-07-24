@@ -5,8 +5,8 @@ body, .body {background: blue;}
 .divider{background: #ffffff; height:10px;min-height: 10px; max-height: 10px;}
 // OVERRIDES
 .pad-zero, td.pad-zero {padding:0;}
-table.columns .text-pad-bottom {padding-bottom: 10px;}
-table.columns .text-pad-top {padding-top: 10px;}
+table.columns .text-pad-bottom {padding-bottom: $base-padding;}
+table.columns .text-pad-top {padding-top: $base-padding;}
 
 // THEMES
 .theme-french {background: $bat-color-french-blue;}
@@ -27,7 +27,7 @@ table.mod-menu tr td {padding:15px;}
 table.mod-desc tr td {padding:15px;}
 table.mod-terms tr td.mod-terms-title {padding:15px 15px 0 15px;}
 table.mod-terms tr td.mod-terms-text {padding:0 15px 15px 15px;}
-table.mod-buttons tr td, table.mod-quote tr td {padding:5px 15px;}
+table.mod-buttons tr td {padding:5px 15px;}
 table.mod-review td.review-stars {padding: 5px 0 5px 15px;}
 table.mod-review td.review-number {padding:0 0 5px 15px;}
 
@@ -37,17 +37,22 @@ table.mod-pref tr td.mod-pref-para {padding: 0 15px 15px 15px;}
 table.mod-pref tr td.mod-pref-para.first {padding: 15px 15px 15px 15px; color:red;}
 
 
-.quote-text, td.quote-text {
-  border-left: 5px solid $bat-color-gold;
+.mod-quote span.quote-text, .mod-quote td.quote-text-td {
   color:$bat-color-light-gray;
   font-family: $secondary-font-family; 
-  font-size: $font-lg; 
   font-style: italic;
-  padding-left: 10px;
 }
-td.footer-text {font-size:$font-sm;padding-top:15px;}
 
-.pad-top {padding: 15px;}
+//.mod-quote td.quote-text-td {padding-left:$base-padding;}
+table.mod-quote td.quote-text-td {padding-left:15px;padding-right:15px;}
+table.mod-quote span.quote-text {border-left: 5px solid $bat-color-gold;display: block; padding-left:10px;}
+
+// padding is not supported on p tags in outlook 07/10/13  see: https://www.emailonacid.com/blog/details/C13/7_tips_and_tricks_regarding_margins_and_padding_in_html_emails
+table.mod-quote span.quote-text {margin-bottom:0; margin:0;margin-left: 0;margin-right:0;}
+
+td.footer-text {font-size:$font-sm;padding-top:$base-padding;}
+
+.pad-top {padding: $base-padding;}
 
 // make sure there are no ugly gaps which manifest themselves on linked images
 .mod-banner-td, .mod-banner-img, .mod-banner-a {line-height: 1;}

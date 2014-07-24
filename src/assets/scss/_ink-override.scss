@@ -72,5 +72,25 @@ table.secondary:active td a {
   color: #555 !important;
 }
 
+table.columns .text-pad,
+table.column .text-pad {
+  padding-left: $base-padding;
+  padding-right: $base-padding;
+}
+
+table.columns .left-text-pad,
+table.columns .text-pad-left,
+table.column .left-text-pad,
+table.column .text-pad-left {
+  padding-left: $base-padding;
+}
+
+table.columns .right-text-pad,
+table.columns .text-pad-right,
+table.column .right-text-pad,
+table.column .text-pad-right {
+  padding-right: $base-padding;
+}
+
 
 
