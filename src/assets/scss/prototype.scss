@@ -1,0 +1,77 @@
+@import "variables";
+
+// Extend variables
+// ----------------
+
+$gutter-width: 20px;
+$col-width: 30px;
+$col-total: 12;
+
+// Mixins
+// -----------------
+// Calculate grid widths
+@mixin colWidth($cols) {
+  width: ( $cols * ( $col-width + $gutter-width ) ) - $gutter-width;
+}
+
+// Utils
+// -----------------
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.content-padding {
+  padding: $font-xs/2 $font-xs;
+}
+
+.row {
+
+  width: 580px;
+  margin: $font-med auto $font-med;
+  padding: 0;
+  @extend .clearfix;
+
+  .col {
+    float: left;
+    margin: 0 0 0 $gutter-width;
+    background: $bat-color-grey-lighter;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .col-12 {
+    @include colWidth(12);
+  }
+  .col-9 {
+    @include colWidth(9);
+  }
+  .col-8 {
+    @include colWidth(8);
+  }
+  .col-6 {
+    @include colWidth(6);
+  }
+  .col-4 {
+    @include colWidth(4);
+  }
+  .col-3 {
+    @include colWidth(3);
+  }
+
+}
+
+// Pages
+// --------------
+
+// Modules
+// --------------
+.mod-deal-local {
+
+}
+
