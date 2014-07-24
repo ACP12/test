@@ -86,7 +86,8 @@ module.exports = function(grunt) {
           style: 'compact'
         },
           files: {
-              'dist/assets/css/style.css': 'src/assets/scss/style.scss'
+              'dist/assets/css/style.css': 'src/assets/scss/style.scss',
+              'dist/assets/css/prototype.css': 'src/assets/scss/prototype.scss'
         }
       }
     },

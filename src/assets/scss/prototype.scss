@@ -72,6 +72,17 @@ $col-total: 12;
 // Modules
 // --------------
 .mod-deal-local {
-
+  h3 {
+    margin: 0;
+    padding: $font-xs;
+    background: $bat-color-pea-soup-light;
+  }
+  .mod-deal-local-body {
+    background: $bat-color-pea-soup-lighter;
+    h4 {
+      padding: 0;
+      margin: 0;
+    }
+  }
 }
 
