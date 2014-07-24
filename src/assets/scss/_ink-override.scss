@@ -14,7 +14,7 @@ table.column td {
 
 // font / line height stuff
 body, table.body, h1, h2, h3, h4, h5, h6, p, td { 
-  color: $dark-gray;
+  color: $base-font-color;
   font-family: $base-font-family; 
   line-height: 1;
 }
@@ -46,6 +46,26 @@ table.large-button td {
   padding: 8px 0;
 }
 
+table.button:hover td,
+table.button:visited td,
+table.button:active td {
+  background: $bat-color-pillar-box-dark !important;
+}
+
+table.button:hover td a,
+table.button:visited td a,
+table.button:active td a {
+  color: #fff !important;
+}
+
+table.button:hover td,
+table.tiny-button:hover td,
+table.small-button:hover td,
+table.medium-button:hover td,
+table.large-button:hover td {
+  background: $bat-color-pillar-box-dark !important;
+}
+
 .lead, p.lead, p.lede, p.leed {
   font-size: $font-med + 2;
   line-height:1.4;
@@ -62,14 +82,14 @@ table.secondary td a {
 }
 
 table.secondary:hover td {
-  background: $bat-color-french-blue !important;
+  background: $bat-color-french-blue-dark !important;
   color: $bat-color-white;
 }
 
 table.secondary:hover td a,
 table.secondary td a:visited,
 table.secondary:active td a {
-  color: #555 !important;
+  color: $bat-color-white !important;
 }
 
 table.columns .text-pad,

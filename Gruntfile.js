@@ -63,7 +63,7 @@ module.exports = function(grunt) {
         },
         recipients: [
           {
-            email: 'yuppysoul@outlook.com',
+            email: 'ben.warren@bookatable.com',
             name: 'yuppysoul'
           }
         ]
