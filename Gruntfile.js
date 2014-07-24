@@ -90,6 +90,29 @@ module.exports = function (grunt) {
                     'dist/assets/css/prototype.css': 'src/assets/scss/prototype.scss'
                 }
             }
+        recipients: [
+          {
+            email: 'ben.warren@bookatable.com',
+            name: 'yuppysoul'
+          }
+        ]
+      },
+      external: {
+        src: ['dist/email.html']
+      }
+    },
+    premailer: {
+      simple: {
+        options: {},
+        files: {
+          'dist/email.html': ['dist/index.html']
+        }
+      }
+    },
+    sass: {                              
+      dist: {                            
+        options: {                       
+          style: 'compact'
         },
         uncss: {
             dist: {

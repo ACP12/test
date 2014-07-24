@@ -1,8 +1,8 @@
 
 
 // GENERIC STUFF
-body, .body {background: blue;}
-.divider{background: #ffffff; height:10px;min-height: 10px; max-height: 10px;}
+body, .body {background: $bat-color-graphite;}
+.divider{background: transparent; height:10px;min-height: 10px; max-height: 10px;}
 // OVERRIDES
 .pad-zero, td.pad-zero {padding:0;}
 table.columns .text-pad-bottom {padding-bottom: $base-padding;}
@@ -10,8 +10,10 @@ table.columns .text-pad-top {padding-top: $base-padding;}
 
 // THEMES
 .theme-french {background: $bat-color-french-blue;}
+.theme-french-lighter {background: $bat-color-french-blue-lighter;}
 .theme-cerulean {background: $bat-color-cerulean;}
 .theme-gold {background: $bat-color-gold;}
+.theme-graphite {background: $bat-color-graphite;}
 .theme-lemon {background: $lemon-color;}
 .theme-pillar-box {background: $bat-color-pillar-box;}
 .theme-soup {background: $bat-color-pea-soup;}
@@ -32,9 +34,9 @@ table.mod-review td.review-stars {padding: 5px 0 5px 15px;}
 table.mod-review td.review-number {padding:0 0 5px 15px;}
 
 
-table.mod-pref {border: 2px dashed orange;}
+table.mod-pref {border: 1px solid $bat-color-white;} // removed because broken in outlook
 table.mod-pref tr td.mod-pref-para {padding: 0 15px 15px 15px;}
-table.mod-pref tr td.mod-pref-para.first {padding: 15px 15px 15px 15px; color:red;}
+table.mod-pref tr td.mod-pref-para.first {padding: 15px 15px 15px 15px;}
 
 
 .mod-quote span.quote-text, .mod-quote td.quote-text-td {
@@ -56,3 +58,45 @@ td.footer-text {font-size:$font-sm;padding-top:$base-padding;}
 
 // make sure there are no ugly gaps which manifest themselves on linked images
 .mod-banner-td, .mod-banner-img, .mod-banner-a {line-height: 1;}
+
+
+.mod-header-text h2 {
+  color: $bat-color-french-blue-lighter;
+}
+
+.mod-header-text h2 a {
+  color: $bat-color-french-blue-lighter;
+}
+
+.mod-header-text a:hover h2 {
+  color: $bat-color-french-blue-lighter;
+}
+
+.mod-header-text:hover h2 a,
+.mod-header-text h2 a:visited,
+.mod-header-text:active h2 a {
+  color: $bat-color-french-blue-lighter !important;
+}
+
+//
+.mod-header-text h3 {
+  color: $bat-color-white;
+}
+
+.mod-header-text h3 a {
+  color: $bat-color-white;
+}
+
+.mod-header-text a:hover h3 {
+  color: $bat-color-white;
+}
+
+.mod-header-text:hover h3 a,
+.mod-header-text h3 a:visited,
+.mod-header-text:active h3 a {
+  color: $bat-color-white !important;
+}
+//
+
+
+.footer-text {color: $bat-color-graphite-light;}
