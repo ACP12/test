@@ -72,6 +72,7 @@ module.exports = function (grunt) {
                 src: ['dist/email.html']
             }
         },
+
         premailer: {
             simple: {
                 options: {},
@@ -80,7 +81,10 @@ module.exports = function (grunt) {
                 }
             }
         },
+
         sass: {
+
+
             dist: {
                 options: {
                     style: 'compact'
@@ -90,30 +94,10 @@ module.exports = function (grunt) {
                     'dist/assets/css/prototype.css': 'src/assets/scss/prototype.scss'
                 }
             }
-        recipients: [
-          {
-            email: 'ben.warren@bookatable.com',
-            name: 'yuppysoul'
-          }
-        ]
-      },
-      external: {
-        src: ['dist/email.html']
-      }
-    },
-    premailer: {
-      simple: {
-        options: {},
-        files: {
-          'dist/email.html': ['dist/index.html']
-        }
-      }
-    },
-    sass: {                              
-      dist: {                            
-        options: {                       
-          style: 'compact'
+
         },
+
+
         uncss: {
             dist: {
 
@@ -166,3 +150,5 @@ module.exports = function (grunt) {
     grunt.registerTask('email2', ['premailer', 'nodemailer']);
 
 };
+
+

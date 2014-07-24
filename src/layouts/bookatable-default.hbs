@@ -1,94 +1,103 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body>
-    <table class="body">
-      <tr>
+</head>
+<body>
+<table class="body">
+    <tr>
         <td class="center" align="center" valign="top">
-          <center>
+            <center>
 
-            <!-- HEADER BEGIN -->
-            <table class="container header">
-              <tr>
-                <td>
-                  <table class="row">
+                <!-- HEADER BEGIN -->
+                <table class="container header">
                     <tr>
-                     <!-- removed the normal last class in order to emulate super border on the right only-->
-                      <td class="wrapper theme-graphite">
-                        <table class="twelve columns">
-                          <tr>
-                            <td class="theme-graphite text-pad-bottom text-pad-top" align="left" valign="top">
-                              {{> standard-header}}
-                            </td>
-                            <td class="expander"></td>
-                          </tr>
-                        </table>
-                      </td>
+                        <td>
+                            <table class="row">
+                                <tr>
+                                    <!-- removed the normal last class in order to emulate super border on the right only-->
+                                    <td class="wrapper theme-graphite">
+                                        <table class="twelve columns">
+                                            <tr>
+                                                <td class="theme-graphite text-pad-bottom text-pad-top" align="left"
+                                                    valign="top">
+                                                    {{> standard-header}}
+                                                </td>
+                                                <td class="expander"></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
                     </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-            <!-- HEADER END -->
+                </table>
+                <!-- HEADER END -->
 
-            <!-- MAIN BEGIN -->
-            <table class="container main">
-              <tr>
-                <td class="super-border theme-white">
-                  {{> body}} 
-                </td>
-              </tr>
-            </table>
-            <!-- MAIN END -->
-            {{>divider}}
-            <!-- FOOTER BEGIN -->
-            <table class="container footer">
-              <tr>
-                <td>
-                  <table class="row">
+                <!-- MAIN BEGIN -->
+                <table class="container main">
                     <tr>
-                      <td class="wrapper last center">
-                      
-                      <center>
-                       
-                        {{> footer }}
-                        
-                        </center>
-                       
-                      </td>
-                      
+                        <td class="super-border theme-white">
+                            {{> body}}
+                        </td>
                     </tr>
-                  </table>
-                  
-                  {{> divider }}
-                  
-                  <table class="row">
+                </table>
+                <!-- MAIN END -->
+                {{>divider}}
+                <!-- FOOTER BEGIN -->
+                <table class="container footer">
                     <tr>
-                      <td class="wrapper last">
-                        <table class="twelve columns">
-                          <tr>
-                            <td class="footer-text">Please do not reply to this email. This email notification was sent from a notification-only address that cannot accept incoming email. This email has come from Bookatable Limited, a limited liability company registered in England &amp; Wales Company Registration No: 05398578 | Registered Office: 5th Floor, Elizabeth House, 39 York Road, London, SE1 7NQ. &copy;2014 Bookatable.com. All rights reserved. You can <a href="#">unsubscribe from these emails</a> at any time.</td>
-                            <td class="expander"></td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                  
-                </td>
-              </tr>
-            </table>
-            <!-- FOOTER END -->
-            
-            {{> divider }}
+                        <td>
+                            <table class="row">
+                                <tr>
+                                    <td class="wrapper last center">
 
-          </center>
+                                        <center>
+
+                                            {{> footer }}
+
+                                        </center>
+
+                                    </td>
+
+                                </tr>
+                            </table>
+
+                            {{> divider }}
+
+                            <table class="row">
+                                <tr>
+                                    <td class="wrapper last">
+                                        <table class="twelve columns">
+                                            <tr>
+                                                <td class="footer-text">Please do not reply to this email. This email
+                                                    notification was sent from a notification-only address that cannot
+                                                    accept incoming email. This email has come from Bookatable Limited,
+                                                    a limited liability company registered in England &amp; Wales
+                                                    Company Registration No: 05398578 | Registered Office: 5th Floor,
+                                                    Elizabeth House, 39 York Road, London, SE1 7NQ. &copy;2014
+                                                    Bookatable.com. All rights reserved. You can <a href="#">unsubscribe
+                                                        from these emails</a> at any time.
+                                                </td>
+                                                <td class="expander"></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+                <!-- FOOTER END -->
+
+                {{> divider }}
+
+            </center>
         </td>
-      </tr>
-    </table> 
-  </body>
+    </tr>
+</table>
+</body>
 </html>
