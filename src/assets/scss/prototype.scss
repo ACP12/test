@@ -3,9 +3,10 @@
 // Extend variables
 // ----------------
 
-$gutter-width: 20px;
-$col-width: 30px;
+$gutter-width: 8px;
+$col-width: 41px;
 $col-total: 12;
+$btn-height: 44px;
 
 // Mixins
 // -----------------
@@ -24,8 +25,57 @@ $col-total: 12;
   }
 }
 
-.content-padding {
+.copy-wrap {
   padding: $font-xs/2 $font-xs;
+  @extend .clearfix;
+}
+
+.img-wrap {
+  padding: $font-xs;
+  @extend .clearfix;
+}
+
+.link-wrap {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  cursor: pointer;
+  @extend .clearfix;
+}
+
+.btn {
+
+  display: block;
+  margin: 0 auto;
+  border-radius: $base-border-radius;
+  vertical-align: middle;
+  text-align: center;
+  background: $bat-color-grey;
+  color: $bat-color-white;
+  font-size: $font-lg;
+  line-height: $btn-height;
+  cursor: pointer;
+  transition: all .3s ease-out;
+
+  &:hover {
+    background: darken($bat-color-grey, 5%);
+    color: $bat-color-white;
+  }
+
+  &.btn-block {
+    border-radius: 0;
+    width: 100%;
+  }
+
+  &.btn-primary {
+    background: $bat-color-pillar-box;
+    &:hover {
+      background: darken($bat-color-pillar-box, 5%);
+      color: $bat-color-white;
+    }
+  }
+
 }
 
 .row {
@@ -35,35 +85,52 @@ $col-total: 12;
   padding: 0;
   @extend .clearfix;
 
+}
+
+.col {
+  float: left;
+  margin: 0 0 0 $gutter-width;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.show-grid {
   .col {
-    float: left;
-    margin: 0 0 0 $gutter-width;
     background: $bat-color-grey-lighter;
+  }
+}
 
-    &:first-child {
-      margin-left: 0;
-    }
-  }
+.col-12 {
+  @include colWidth(12);
+}
 
-  .col-12 {
-    @include colWidth(12);
-  }
-  .col-9 {
-    @include colWidth(9);
-  }
-  .col-8 {
-    @include colWidth(8);
-  }
-  .col-6 {
-    @include colWidth(6);
-  }
-  .col-4 {
-    @include colWidth(4);
-  }
-  .col-3 {
-    @include colWidth(3);
-  }
+.col-9 {
+  @include colWidth(9);
+}
 
+.col-8 {
+  @include colWidth(8);
+}
+
+.col-7 {
+  @include colWidth(7);
+}
+
+.col-6 {
+  @include colWidth(6);
+}
+
+.col-5 {
+  @include colWidth(5);
+}
+
+.col-4 {
+  @include colWidth(4);
+}
+
+.col-3 {
+  @include colWidth(3);
 }
 
 // Pages
@@ -72,17 +139,14 @@ $col-total: 12;
 // Modules
 // --------------
 .mod-deal-local {
-  h3 {
+  background: $bat-color-pea-soup-lighter;
+  h2 {
     margin: 0;
     padding: $font-xs;
     background: $bat-color-pea-soup-light;
   }
   .mod-deal-local-body {
-    background: $bat-color-pea-soup-lighter;
-    h4 {
-      padding: 0;
-      margin: 0;
-    }
+
   }
 }
 
