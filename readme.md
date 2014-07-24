@@ -1,5 +1,7 @@
 # BAT Mail
 
+---
+
 This is an email framework that will be used to create all of the the CRM and promotional email marketing. The 
 objectives are to:
 
