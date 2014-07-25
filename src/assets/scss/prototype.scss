@@ -17,6 +17,7 @@ $btn-height: 44px;
 
 // Utils
 // -----------------
+
 .clearfix {
   &:after {
     content: "";
@@ -25,16 +26,19 @@ $btn-height: 44px;
   }
 }
 
+// Add padding to copy container
 .copy-wrap {
   padding: $font-xs/2 $font-xs;
   @extend .clearfix;
 }
 
+// Add padding to image
 .img-wrap {
   padding: $font-xs;
   @extend .clearfix;
 }
 
+// Wrap content in hyperlink
 .link-wrap {
   display: block;
   margin: 0;
@@ -44,8 +48,9 @@ $btn-height: 44px;
   @extend .clearfix;
 }
 
-.btn {
+// Buttons
 
+.btn {
   display: block;
   margin: 0 auto;
   border-radius: $base-border-radius;
@@ -54,6 +59,7 @@ $btn-height: 44px;
   background: $bat-color-grey;
   color: $bat-color-white;
   font-size: $font-lg;
+  text-transform: uppercase;
   line-height: $btn-height;
   cursor: pointer;
   transition: all .3s ease-out;
@@ -63,11 +69,13 @@ $btn-height: 44px;
     color: $bat-color-white !important;
   }
 
+  // Fill containing element
   &.btn-block {
     border-radius: 0;
     width: 100%;
   }
 
+  // Book now etc.
   &.btn-primary {
     background: $bat-color-pillar-box;
     &:hover {
@@ -75,18 +83,14 @@ $btn-height: 44px;
       color: $bat-color-white;
     }
   }
-
 }
 
-.icon-marker {
-  display: inline-block;
-  font-size: inherit;
-  height: 12px;
-}
+// Grid utilities
+// -----------------------------------------------------------------------
 
 .row {
 
-  width: 580px;
+  width: 100%;
   margin: $font-med auto $font-med;
   padding: 0;
   @extend .clearfix;
@@ -95,10 +99,18 @@ $btn-height: 44px;
 
 .col {
   float: left;
-  margin: 0 0 0 $gutter-width;
-  &:first-child {
-    margin-left: 0;
-  }
+  margin: 0;
+}
+
+.col-12,
+.col-9,
+.col-8,
+.col-7,
+.col-6,
+.col-5,
+.col-4,
+.col-3 {
+  width: 90%;
 }
 
 .show-grid {
@@ -107,40 +119,8 @@ $btn-height: 44px;
   }
 }
 
-.col-12 {
-  @include colWidth(12);
-}
-
-.col-9 {
-  @include colWidth(9);
-}
-
-.col-8 {
-  @include colWidth(8);
-}
-
-.col-7 {
-  @include colWidth(7);
-}
-
-.col-6 {
-  @include colWidth(6);
-}
-
-.col-5 {
-  @include colWidth(5);
-}
-
-.col-4 {
-  @include colWidth(4);
-}
-
-.col-3 {
-  @include colWidth(3);
-}
-
-// Pages
-// --------------
+// PAGES
+// -----------------------------------------------------------------------
 .page-index,
 .page-styles,
 .page-prototypes {
@@ -149,11 +129,27 @@ $btn-height: 44px;
   h5 {
     font-size: 18px;
     color: $bat-color-grey;
+    span {
+      display: inline-block;
+      float: right;
+    }
   }
 }
 
-// Modules
-// --------------
+// MODULES
+// -----------------------------------------------------------------------
+.mod-deal-hero-header {
+  background: $bat-color-cerulean;
+  h2 {
+    color: $bat-color-french-blue-light;
+    font-weight: 200;
+  }
+  p {
+    color: $bat-color-white;
+    font-size: $font-lg;
+    font-weight: 200;
+  }
+}
 
 .mod-deal-local {
 
@@ -179,12 +175,66 @@ $btn-height: 44px;
   }
 
 }
-
 .star-rating {
   display: inline-block;
   img {
     width: 25%;
   }
 }
+
+@media only screen and (min-width: 580px) {
+
+  .row {
+
+    width: 580px;
+    margin: $font-med auto $font-med;
+    padding: 0;
+    @extend .clearfix;
+
+  }
+
+  .col {
+    float: left;
+    margin: 0 0 0 $gutter-width;
+    &:first-child,
+    &.col-12 {
+      margin-left: 0;
+    }
+  }
+
+  .col-12 {
+    @include colWidth(12);
+  }
+
+  .col-9 {
+    @include colWidth(9);
+  }
+
+  .col-8 {
+    @include colWidth(8);
+  }
+
+  .col-7 {
+    @include colWidth(7);
+  }
+
+  .col-6 {
+    @include colWidth(6);
+  }
+
+  .col-5 {
+    @include colWidth(5);
+  }
+
+  .col-4 {
+    @include colWidth(4);
+  }
+
+  .col-3 {
+    @include colWidth(3);
+  }
+
+}
+
 
 
