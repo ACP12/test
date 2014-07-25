@@ -42,17 +42,20 @@ module.exports = function (grunt) {
         },
 
         connect: {
+
             options: {
                 open: true,
                 hostname: 'localhost',
                 port: 8000,
                 livereload: 35729
             },
+
             dev: {
                 options: {
                     base: 'dist'
                 }
             },
+
             dist: {
                 options: {
                     keepalive: true,
@@ -170,6 +173,11 @@ module.exports = function (grunt) {
     grunt.registerTask('email2', ['premailer', 'nodemailer']);
 
 
+    // Allow target page & recipient params to be passed from
+    // @param taskName: the grunt task to run
+    // @param page: the name of the .hbs page template to send
+    // @param acct: the account name of the recipient
+    // ----------------------------------------------
     grunt.registerTask('send', 'Send target page as email test', function (taskName, page, acct) {
 
         var to = grunt.config('mail').accounts[acct];
