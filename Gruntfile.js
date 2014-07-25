@@ -176,7 +176,10 @@ module.exports = function (grunt) {
     // Allow target page & recipient params to be passed from
     // @param taskName: the grunt task to run
     // @param page: the name of the .hbs page template to send
-    // @param acct: the account name of the recipient
+    // @param acct: the account name of the recipient [optional]
+    // Example: grunt send:email2:stardeal:outlook
+    // Would run the 'email2' task, sending the 'stardeal' page to the 'outlook' account
+    // as configured at the beginning of this Grunt file.
     // ----------------------------------------------
     grunt.registerTask('send', 'Send target page as email test', function (taskName, page, acct) {
 
@@ -191,4 +194,3 @@ module.exports = function (grunt) {
 
     });
 };
-
