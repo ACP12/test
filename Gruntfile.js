@@ -9,7 +9,7 @@ module.exports = function (grunt) {
                 //layout: 'src/layouts/default.hbs',
                 layoutdir: 'src/layouts/',
                 layoutext: '.hbs',
-                partials: ['src/partials/*.hbs'],
+                partials: ['src/partials/**/*.hbs'],
                 data: ['data/*.{json,yml}'],
                 flatten: true
             },
@@ -21,7 +21,7 @@ module.exports = function (grunt) {
         },
 
         clean: {
-            all: ['dist/*.html']
+            all: ['dist/*.html', 'dist/*.css']
         },
 
         connect: {
