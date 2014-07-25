@@ -59,7 +59,7 @@ module.exports = function(grunt) {
           }
         },
         message: {
-          subject: 'A test e-mail'
+          subject: 'Another test e-mail'
         },
         recipients: [
           {
