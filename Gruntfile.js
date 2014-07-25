@@ -4,6 +4,23 @@ module.exports = function (grunt) {
 
         pkg: grunt.file.readJSON('package.json'),
 
+        mail: {
+
+            tgtpage: '',
+
+            tgtacct: '',
+
+            accounts: {
+
+                jim: { name: 'jim', email: 'jim@bookatable.com'},
+                outlook: { name: 'YuppySoul', email: 'yuppysoul@outlook.com' },
+                lbtest: { name: 'LB Test 08', email: 'lbtest08@gmail.com' },
+                default: { name: 'Ben', email: 'ben.warren@bookatable.com' }
+
+            }
+
+        },
+
         assemble: {
             options: {
                 //layout: 'src/layouts/default.hbs',
@@ -63,27 +80,27 @@ module.exports = function (grunt) {
                 },
                 recipients: [
                     {
-                        email: 'yuppysoul@outlook.com',
-                        name: 'yuppysoul'
+                        email: '<%= mail.tgtacct.email %>',
+                        name: '<%= mail.tgtacct.name %>'
                     }
                 ]
             },
             external: {
                 src: ['dist/email.html']
             }
+
         },
 
         premailer: {
             simple: {
                 options: {},
                 files: {
-                    'dist/email.html': ['dist/index.html']
+                    'dist/email.html': ['dist/<%= mail.tgtpage %>.html']
                 }
             }
         },
 
         sass: {
-
 
             dist: {
                 options: {
@@ -97,8 +114,8 @@ module.exports = function (grunt) {
 
         },
 
-
         uncss: {
+
             dist: {
 
                 options: {
@@ -119,7 +136,9 @@ module.exports = function (grunt) {
                 }
             }
         },
+
         watch: {
+
             options: {
                 livereload: true
             },
@@ -131,6 +150,7 @@ module.exports = function (grunt) {
                 files: 'src/**/*.hbs',
                 tasks: 'assemble'
             }
+
         }
     });
 
@@ -149,6 +169,18 @@ module.exports = function (grunt) {
     grunt.registerTask('email', ['uncss', 'premailer', 'nodemailer']);
     grunt.registerTask('email2', ['premailer', 'nodemailer']);
 
-};
 
+    grunt.registerTask('send', 'Send target page as email test', function (taskName, page, acct) {
+
+        var to = grunt.config('mail').accounts[acct];
+
+        grunt.config('mail', {
+            'tgtpage': page,
+            'tgtacct': to || (grunt.config('mail').accounts['default'])
+        });
+
+        grunt.task.run(taskName);
+
+    });
+};
 

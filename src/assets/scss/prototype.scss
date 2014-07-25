@@ -99,7 +99,7 @@ $btn-height: 44px;
 
 .col {
   float: left;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .col-12,
@@ -110,7 +110,7 @@ $btn-height: 44px;
 .col-5,
 .col-4,
 .col-3 {
-  width: 90%;
+  width: 100%;
 }
 
 .show-grid {
@@ -175,6 +175,7 @@ $btn-height: 44px;
   }
 
 }
+
 .star-rating {
   display: inline-block;
   img {
