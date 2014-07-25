@@ -1,167 +1,32 @@
 ---
-title: Bookatable Star Deal
-region: London
-culture: en-GB
-layout: bookatable-default
+title:      Content index
+desc:       Displays a list of all pages marked where published = true.
+layout:     layout-basic
+noindex:    true
 ---
 
-<!-- divider -->
-{{> divider }}
+<div class="page-index">
 
-<!-- STAR DEAL STRAPLINE -->
-{{> stardeal-strapline }}
-<!-- STAR DEAL STRAPLINE -->
+    <h2>Pages</h2>
 
-<!-- divider -->
-{{> divider }}
+    <div class="list-group">
 
-<!-- STAR DEAL HEADER TEXT -->
-<table class="row theme-cerulean">
-    <tr>
-        <td class="wrapper">
-            <table class="eight columns">
-                <tr>
-                    <td>{{> stardeal-header-text}}</td>
-                    <td class="expander"></td>
-                </tr>
-            </table>
-        </td>
-        <td class="wrapper last">
-            <table class="four columns">
-                <tr>
-                    <td>{{> stardeal-header-button}}</td>
-                    <td class="expander"></td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
-<!-- STAR DEAL HEADER TEXT -->
+        {{#each pages}}
 
-<!-- STAR DEAL HERO -->
-<table class="row">
-    <tr>
-        <td class="wrapper last">
-            <table class="twelve columns">
-                <tr>
-                    <td>{{> stardeal-hero}}</td>
-                    <td class="expander"></td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
-<!-- STAR DEAL HERO -->
+            {{#unless data.noindex}}
 
-<!-- divider -->
-{{> divider }}
+            <a href="{{ this.filename }}" class="list-group-item">
 
-<!-- STAR DEAL CONTENT -->
-<table class="row">
-    <tr>
-        <td class="wrapper">
+                <h4 class="list-group-item-heading">{{ data.title }}</h4>
 
-            <table class="six columns">
-                <tr>
-                    <td class="theme-white">
+                <p class="list-group-item-text">{{ data.desc }}</p>
 
-                        {{> stardeal-desc }}
+            </a>
 
-                        {{> stardeal-buttons }}
+            {{/unless}}
 
-                        {{> stardeal-review }}
+        {{/each}}
 
-                        {{> stardeal-quote }}
-
-                    </td>
-                    <td class="expander"></td>
-                </tr>
-            </table>
-
-        </td>
-        <td class="wrapper last">
-
-            <table class="six columns">
-                <tr>
-                    <td class="theme-white">
-
-                        {{> stardeal-menu }}
-
-
-                    </td>
-                    <td class="expander"></td>
-                </tr>
-            </table>
-
-        </td>
-    </tr>
-</table>
-<!-- STAR DEAL CONTENT -->
-
-<!-- STAR DEAL TERMS -->
-<table class="row">
-    <tr>
-        <td class="wrapper last">
-            <table class="twelve columns">
-                <tr>
-                    <td>
-                        {{> stardeal-terms }}
-                    </td>
-                    <td class="expander"></td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
-<!-- STAR DEAL TERMS -->
-
-{{> divider }}
-
-
-<!-- VIEW ALL BANNER -->
-
-<table class="row">
-    <tr>
-        <td class="wrapper last">
-            <table class="twelve columns">
-                <tr>
-                    <td class="center">
-                       <center>                        
-                       	{{> stardeal-banner }}
-                       </center>
-                    </td>
-                    <td class="expander"></td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
-
-<!-- VIEW ALL BANNER -->
-
-<!-- divider -->
-{{> divider }}
-
-<!-- PREFERENCE -->
-<table class="row">
-    <tr>
-        <td class="wrapper last">
-            <table class="twelve columns">
-                <tr>
-                    <td class="theme-white">{{> stardeal-pref }}</td>
-                    <td class="expander"></td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
-<!-- PREFERENCE -->
-
-<!-- divider -->
-{{> divider }}
-<!-- divider -->
-
-
-
-
+    </div>
+</div>
 
