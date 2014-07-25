@@ -3,32 +3,69 @@
 @media only screen and (max-width: 600px) {
   // on mobile super border must die!
   table[class="body"] .super-border {
-    padding-left: 0 !important;padding-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
-  
-  table[class="body"] table.mod-menu {width:100% !important;}
+
+  table[class="body"] table.mod-menu {
+    width: 100% !important;
+  }
   // make sure images are resized correctly for mobile
-  table[class="body"] .review-stars img {width:135px !important; height: 26px;}
-  table[class="body"] img.icon-social-google, 
+  table[class="body"] .review-stars img {
+    width: 135px !important;
+    height: 26px;
+  }
+  table[class="body"] img.icon-social-google,
   table[class="body"] img.icon-social-facebook,
-  table[class="body"] img.icon-social-twitter{width:40px !important; height: 40px !important;margin-left:10%;}
-  table[class="body"] img.icon-social-ios{width:118px !important; height: 40px !important;}
-  table[class="body"] table.mod-footer tr td {width:auto !important;}
-  
+  table[class="body"] img.icon-social-twitter {
+    width: 40px !important;
+    height: 40px !important;
+    margin-left: 10%;
+  }
+  table[class="body"] img.icon-social-ios {
+    width: 118px !important;
+    height: 40px !important;
+  }
+  table[class="body"] table.mod-footer tr td {
+    width: auto !important;
+  }
+
   // prevent social buttons from becoming too small
-  table[class="body"] .mod-footer.columns td.one {min-width:40px !important; min-height: 40px !important;}
-  table[class="body"] .mod-footer.columns td.three {min-width:118px !important; min-height: 40px !important;}
-  
+  table[class="body"] .mod-footer.columns td.one {
+    min-width: 40px !important;
+    min-height: 40px !important;
+  }
+  table[class="body"] .mod-footer.columns td.three {
+    min-width: 118px !important;
+    min-height: 40px !important;
+  }
+
   //mod-buttons
-  table[class="body"] .mod-buttons {background:orange !important;width:100% !important;}
-    table[class="body"] .button {background:orange !important;width:100% !important;}
-  table[class="body"] .mod-booknow {background:orange !important;width:100% !important;}
-  
+  table[class="body"] .mod-buttons {
+    background: orange !important;
+    width: 100% !important;
+  }
+  table[class="body"] .button {
+    background: orange !important;
+    width: 100% !important;
+  }
+  table[class="body"] .mod-booknow {
+    background: orange !important;
+    width: 100% !important;
+  }
+
   // stop bat logo from expanding
-  table[class="body"] .header-bat-logo-img, .header-bat-logo-td {width:188px !important;height:33px !important;}
-  
+  table[class="body"] .header-bat-logo-img, .header-bat-logo-td {
+    width: 188px !important;
+    height: 33px !important;
+  }
+
   // stop ugly gap due to forced height on td. original height exists for the benefit of desktops clients.
-  table[class="body"] .mod-banner-td {height:auto !important;}
+  table[class="body"] .mod-banner-td {
+    height: auto !important;
+  }
   // fix social button spacing
-  table[class="body"] .columns.mod-footer td.one{ width: 25%!important; }
+  table[class="body"] .columns.mod-footer td.one {
+    width: 25% !important;
+  }
 }

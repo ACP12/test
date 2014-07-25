@@ -1,64 +1,161 @@
-
-
 // GENERIC STUFF
-body, .body {background: $bat-color-graphite;}
-.divider{background: transparent; height:10px;min-height: 10px; max-height: 10px;}
+body, .body {
+  background: $bat-color-graphite;
+}
+
+.divider {
+  background: transparent;
+  height: 10px;
+  min-height: 10px;
+  max-height: 10px;
+}
+
 // OVERRIDES
-.pad-zero, td.pad-zero {padding:0;}
-table.columns .text-pad-bottom {padding-bottom: $base-padding;}
-table.columns .text-pad-top {padding-top: $base-padding;}
+.pad-zero, td.pad-zero {
+  padding: 0;
+}
+
+table.columns .text-pad-bottom {
+  padding-bottom: $base-padding;
+}
+
+table.columns .text-pad-top {
+  padding-top: $base-padding;
+}
 
 // THEMES
-.theme-french {background: $bat-color-french-blue;}
-.theme-french-lighter {background: $bat-color-french-blue-lighter;}
-.theme-cerulean {background: $bat-color-cerulean;}
-.theme-gold {background: $bat-color-gold;}
-.theme-graphite {background: $bat-color-graphite;}
-.theme-lemon {background: $lemon-color;}
-.theme-pillar-box {background: $bat-color-pillar-box;}
-.theme-soup {background: $bat-color-pea-soup;}
-.theme-white {background: $bat-color-white;}
+.theme-french {
+  background: $bat-color-french-blue;
+}
+
+.theme-french-lighter {
+  background: $bat-color-french-blue-lighter;
+}
+
+.theme-cerulean {
+  background: $bat-color-cerulean;
+}
+
+.theme-gold {
+  background: $bat-color-gold;
+}
+
+.theme-graphite {
+  background: $bat-color-graphite;
+}
+
+.theme-lemon {
+  background: $lemon-color;
+}
+
+.theme-pillar-box {
+  background: $bat-color-pillar-box;
+}
+
+.theme-soup {
+  background: $bat-color-pea-soup;
+}
+
+.theme-white {
+  background: $bat-color-white;
+}
 
 // This is the outside white border. It completely falls out of the normal flow of things (sorry about that)
-td.super-border-right, .super-border-right {padding-left:0; padding-right: 20px;}
-.super-border {padding-left:10px;padding-right:10px;}
+td.super-border-right, .super-border-right {
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+.super-border {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
 // star deal stuff
-table.mod-menu {width:265px;}
-table.mod-menu tr td {padding:15px;}
-table.mod-desc tr td {padding:15px;}
-table.mod-terms tr td.mod-terms-title {padding:15px 15px 0 15px;}
-table.mod-terms tr td.mod-terms-text {padding:0 15px 15px 15px;}
-table.mod-buttons tr td {padding:5px 15px;}
-table.mod-review td.review-stars {padding: 5px 0 5px 15px;}
-table.mod-review td.review-number {padding:0 0 5px 15px;}
+table.mod-menu {
+  width: 265px;
+}
 
+table.mod-menu tr td {
+  padding: 15px;
+}
 
-table.mod-pref {border: 1px solid $bat-color-white;} // removed because broken in outlook
-table.mod-pref tr td.mod-pref-para {padding: 0 15px 15px 15px;}
-table.mod-pref tr td.mod-pref-para.first {padding: 15px 15px 15px 15px;}
+table.mod-desc tr td {
+  padding: 15px;
+}
 
+table.mod-terms tr td.mod-terms-title {
+  padding: 15px 15px 0 15px;
+}
+
+table.mod-terms tr td.mod-terms-text {
+  padding: 0 15px 15px 15px;
+}
+
+table.mod-buttons tr td {
+  padding: 5px 15px;
+}
+
+table.mod-review td.review-stars {
+  padding: 5px 0 5px 15px;
+}
+
+table.mod-review td.review-number {
+  padding: 0 0 5px 15px;
+}
+
+table.mod-pref {
+  border: 1px solid $bat-color-white;
+}
+
+// removed because broken in outlook
+table.mod-pref tr td.mod-pref-para {
+  padding: 0 15px 15px 15px;
+}
+
+table.mod-pref tr td.mod-pref-para.first {
+  padding: 15px 15px 15px 15px;
+}
 
 .mod-quote span.quote-text, .mod-quote td.quote-text-td {
-  color:$bat-color-light-gray;
-  font-family: $secondary-font-family; 
+  color: $bat-color-light-gray;
+  font-family: $secondary-font-family;
   font-style: italic;
 }
 
 //.mod-quote td.quote-text-td {padding-left:$base-padding;}
-table.mod-quote td.quote-text-td {padding-left:15px;padding-right:15px;}
-table.mod-quote span.quote-text {border-left: 5px solid $bat-color-gold;display: block; padding-left:10px;}
+table.mod-quote td.quote-text-td {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+table.mod-quote span.quote-text {
+  border-left: 5px solid $bat-color-gold;
+  display: block;
+  padding-left: 10px;
+}
 
 // padding is not supported on p tags in outlook 07/10/13  see: https://www.emailonacid.com/blog/details/C13/7_tips_and_tricks_regarding_margins_and_padding_in_html_emails
-table.mod-quote span.quote-text {margin-bottom:0; margin:0;margin-left: 0;margin-right:0;}
+table.mod-quote span.quote-text {
+  margin-bottom: 0;
+  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
 
-td.footer-text {font-size:$font-sm;padding-top:$base-padding;}
+td.footer-text {
+  font-size: $font-sm;
+  padding-top: $base-padding;
+}
 
-.pad-top {padding: $base-padding;}
+.pad-top {
+  padding: $base-padding;
+}
 
 // make sure there are no ugly gaps which manifest themselves on linked images
-.mod-banner-td, .mod-banner-img, .mod-banner-a {line-height: 1;}
-
+.mod-banner-td, .mod-banner-img, .mod-banner-a {
+  line-height: 1;
+}
 
 .mod-header-text h2 {
   color: $bat-color-french-blue-lighter;
@@ -96,7 +193,9 @@ td.footer-text {font-size:$font-sm;padding-top:$base-padding;}
 .mod-header-text:active h3 a {
   color: $bat-color-white !important;
 }
+
 //
 
-
-.footer-text {color: $bat-color-graphite-light;}
+.footer-text {
+  color: $bat-color-graphite-light;
+}

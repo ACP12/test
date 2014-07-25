@@ -5,31 +5,53 @@ td.wrapper {
 
 table.columns td,
 table.column td {
-  padding: 0; 
+  padding: 0;
 }
+
 // kill 10px all over padding to simplify things
 .block-grid td {
   padding: 0;
 }
 
 // font / line height stuff
-body, table.body, h1, h2, h3, h4, h5, h6, p, td { 
+body, table.body, h1, h2, h3, h4, h5, h6, p, td {
   color: $base-font-color;
-  font-family: $base-font-family; 
+  font-family: $base-font-family;
   line-height: 1;
 }
 
-p, h1, h2, h3, h4{ 
+p, h1, h2, h3, h4 {
   margin-bottom: $font-xxs;
 }
 
-h1 {font-size: $font-xxl;}
-h2 {font-size: $font-xl;}
-h3 {font-size: $font-lg;}
-h4 {font-size: $font-med}
-h5 {font-size: 44px;}
-h6 {font-size: 66px;}
-body, table.body, p, td {font-size: $font-med;line-height:1.4;}
+h1 {
+  font-size: $font-xxl;
+}
+
+h2 {
+  font-size: $font-xl;
+}
+
+h3 {
+  font-size: $font-lg;
+}
+
+h4 {
+  font-size: $font-med
+}
+
+h5 {
+  font-size: 44px;
+}
+
+h6 {
+  font-size: 66px;
+}
+
+body, table.body, p, td {
+  font-size: $font-med;
+  line-height: 1.4;
+}
 
 // change button stuff
 table.button td,
@@ -68,7 +90,7 @@ table.large-button:hover td {
 
 .lead, p.lead, p.lede, p.leed {
   font-size: $font-med + 2;
-  line-height:1.4;
+  line-height: 1.4;
 }
 
 table.secondary td {
