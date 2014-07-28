@@ -5,46 +5,55 @@ $bat-color-graphite-dark: #171E20;
 $bat-color-graphite: #2C393E;
 $bat-color-graphite-light: #606A6E;
 $bat-color-graphite-lighter: #BFC3C5;
+$bat-color-graphite-superlight: lighten($bat-color-graphite-lighter, 10%);
 
 $bat-color-cerulean-dark: #1E404C;
 $bat-color-cerulean: #2C5F71;
 $bat-color-cerulean-light: #608794;
 $bat-color-cerulean-lighter: #BFCFD4;
+$bat-color-cerulean-superlight: lighten($bat-color-cerulean-lighter, 10%);
 
 $bat-color-french-blue-dark: #2C7B97;
 $bat-color-french-blue: #389bbe;
 $bat-color-french-blue-light: #69B4CE;
-$bat-color-french-blue-lighter: #C3E1EB;
+$bat-color-french-blue-lighter: #E9F4F8;
+$bat-color-french-blue-superlight: lighten($bat-color-french-blue-lighter, 2%);
 
 $bat-color-pea-soup-dark: #9A990F;
 $bat-color-pea-soup: #C9C713;
 $bat-color-pea-soup-light: #D6D54E;
 $bat-color-pea-soup-lighter: #EEEEB8;
+$bat-color-pea-soup-superlight: lighten($bat-color-pea-soup-lighter, 10%);
 
 $bat-color-gold-dark: #F6C205;
 $bat-color-gold: #FBD033;
 $bat-color-gold-light: #FCDB66;
 $bat-color-gold-lighter: #FDF0C1;
+$bat-color-gold-superlight: lighten($bat-color-gold-lighter, 10%);
 
 $bat-color-terracotta-dark: #B05000;
 $bat-color-terracotta: #E36700;
 $bat-color-terracotta-light: #EA8D3F;
 $bat-color-terracotta-lighter: #F6D1B2;
+$bat-color-terracotta-superlight: lighten($bat-color-terracotta-lighter, 10%);
 
 $bat-color-pillar-box-dark: #A31A1F;
 $bat-color-pillar-box: #CF2128;
 $bat-color-pillar-box-light: #DB585D;
 $bat-color-pillar-box-lighter: #F0BCBE;
+$bat-color-pillar-box-superlight: lighten($bat-color-pillar-box-lighter, 5%);
 
 $bat-color-vellum: #FBFAEB;
 $bat-color-vellum-dark: #F2EFC0;
 $bat-color-vellum-light: #FCFBF0;
 $bat-color-vellum-lighter: #FDFDF9;
+$bat-color-vellum-superlight: lighten($bat-color-vellum-lighter, 1%);
 
 $bat-color-turtle-dove: #98B4BF;
 $bat-color-turtle-dove-dark: #799DAB;
 $bat-color-turtle-dove-light: #B1C6CF;
 $bat-color-turtle-dove-lighter: #E0E8EB;
+$bat-color-turtle-dove-superlight: lighten($bat-color-turtle-dove, 2%);
 
 $bat-color-black: #111111;
 $bat-color-grey-darker: #555555;
@@ -53,6 +62,7 @@ $bat-color-grey: #BBBBBB;
 $bat-color-grey-light: #E5E5E5;
 $bat-color-grey-lighter: #F7F7F7;
 $bat-color-white: #FFFFFF;
+
 
 // TODO: Need to deprecate non-palette colours
 

@@ -376,7 +376,7 @@ table.palette {
         background: $bat-color-turtle-dove-light;
       }
       &:nth-child(10) {
-        background: $bat-color-grey;
+        background: $bat-color-grey-light;
       }
     }
   }
@@ -414,44 +414,43 @@ table.palette {
         background: $bat-color-turtle-dove-lighter;
       }
       &:nth-child(10) {
-        background: $bat-color-grey-light;
+        background: $bat-color-grey-lighter;
       }
     }
   }
   tr.palette-superlight {
     td {
       height: 64px;
-      background: lighten($bat-color-grey-lighter, 10%);
 
       &:nth-child(1) {
-        background: lighten($bat-color-graphite-lighter, 10%);
+        background: $bat-color-graphite-superlight;
       }
       &:nth-child(2) {
-        background: lighten($bat-color-cerulean-lighter, 10%);
+        background: $bat-color-cerulean-superlight;
       }
       &:nth-child(3) {
-        background: lighten($bat-color-french-blue-lighter, 10%);
+        background: $bat-color-french-blue-superlight;
       }
       &:nth-child(4) {
-        background: lighten($bat-color-pea-soup-lighter, 10%);
+        background: $bat-color-pea-soup-superlight;
       }
       &:nth-child(5) {
-        background: lighten($bat-color-gold-lighter, 10%);
+        background: $bat-color-gold-superlight;
       }
       &:nth-child(6) {
-        background: lighten($bat-color-terracotta-lighter, 10%);
+        background: $bat-color-terracotta-superlight;
       }
       &:nth-child(7) {
-        background: lighten($bat-color-pillar-box-lighter, 10%);
+        background: $bat-color-pillar-box-superlight;
       }
       &:nth-child(8) {
-        background: lighten($bat-color-vellum-lighter, 2%);
+        background: $bat-color-vellum-superlight;
       }
       &:nth-child(9) {
-        background: lighten($bat-color-turtle-dove-lighter, 2%);
+        background: $bat-color-turtle-dove-superlight;
       }
       &:nth-child(10) {
-        background: lighten($bat-color-grey-light, 5%);
+        background: $bat-color-white;
       }
     }
   }
