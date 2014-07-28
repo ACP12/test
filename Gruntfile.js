@@ -117,6 +117,23 @@ module.exports = function (grunt) {
 
         },
 
+        processhtml: {
+
+            dist: {
+                options: {
+                    process: true,
+                    customBlockTypes: ['src/custom-blocks/addGridSymbols.js']
+                },
+                files:
+                    [{
+                        expand: true,
+                        cwd: 'dist',
+                        src: ['*.html'],
+                        dest: 'dist'
+                    }]
+            }
+        },
+
         uncss: {
 
             dist: {
@@ -163,10 +180,12 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-nodemailer');
     grunt.loadNpmTasks('grunt-premailer');
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-processhtml');
     grunt.loadNpmTasks('grunt-uncss');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', ['clean', 'assemble', 'sass', 'connect:dev', 'watch']);
+    grunt.registerTask('eems', ['clean', 'assemble', 'sass', 'processhtml', 'connect:dev', 'watch']);
     grunt.registerTask('premail', ['premailer']);
     grunt.registerTask('small', ['uncss']);
     grunt.registerTask('email', ['uncss', 'premailer', 'nodemailer']);

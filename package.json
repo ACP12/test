@@ -11,7 +11,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-nodemailer": "^0.2.1",
     "grunt-premailer": "^0.2.10",
-    "grunt-uncss": "^0.3.5"
+    "grunt-uncss": "^0.3.5",
+    "grunt-processhtml": "^0.3.3"
   }
-
 }
