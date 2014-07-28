@@ -6,88 +6,163 @@ layout:         layout-basic
 
 <div class="page-styles">
 
-    {{#markdown}}
+    <h1>{{ title }}</h1>
 
-        # {{ title }}
-
-        ----
-
-        ### Grid
-        The email template layouts are based around a 12 colomn, responsive grid system.
-
-    {{/markdown}}
+    <section class="style">
+        {{#markdown}}
 
 
-    <div class="show-grid">
-        <div class="row">
+#Images
 
-            <div class="col col-12">
-                <div class="copy-wrap">
-                    12
+Images should be supplied in .jpg format at 2x the display width and saved at 40% quality to reduce file
+size to a
+minimum. The image will appear
+slightly pixelated at actual size but when render in the email will look sharp.
+
+> **IMPORTANT** regardless of the size of the image supplied, the aspect ratio of the
+images MUST be maintained, otherwise they are liable to break the layout in Outlook.
+
+        {{/markdown}}
+    </section>
+
+
+    <section class="style">
+        {{# markdown }}
+
+# Colour palette
+
+        {{/markdown}}
+        <table class="palette">
+            <tbody>
+            <tr>
+                <th>Graphite</th>
+                <th>Cerulean</th>
+                <th>French-Blue</th>
+                <th>Pea-Soup</th>
+                <th>Gold</th>
+                <th>Pillar-Box</th>
+                <th>Terracotta</th>
+                <th>Turtledove</th>
+                <th>Greys</th>
+            </tr>
+            <tr class="palette-dark">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="palette-med">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="palette-light">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="palette-lighter">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+    <section class="style">
+        {{#markdown }}
+
+# Typography
+
+# ```<h1>``` 36px Regular (400)
+
+## ```<h2>``` 32px Regular (400)
+
+### ```<h3>``` 24px Regular (400)
+
+#### ```<h4>``` 16px Bold (700)
+
+```<p>``` The default font size for all paragraph text is ```16px``` with a ```line-height``` of 1.4. Inline
+hyperlinks [look like this](http://bookatable.com/).
+
+        {{/markdown}}
+    </section>
+
+    <section class="style">
+        {{#markdown}}
+
+# Grid
+The email template layouts are based around a 12 colomn, responsive grid system.
+
+        {{/markdown}}
+
+        <!-- Layout grid -->
+        <div class="show-grid">
+            <div class="row">
+                <div class="col col-12">
+                    <div class="copy-wrap">12</div>
                 </div>
             </div>
-
+            <div class="row">
+                <div class="col col-6">
+                    <div class="copy-wrap">6</div>
+                </div>
+                <div class="col col-6">
+                    <div class="copy-wrap">6</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-7">
+                    <div class="copy-wrap">7</div>
+                </div>
+                <div class="col col-5">
+                    <div class="copy-wrap">5</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-8">
+                    <div class="copy-wrap">8</div>
+                </div>
+                <div class="col col-4">
+                    <div class="copy-wrap">4</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-9">
+                    <div class="copy-wrap">9</div>
+                </div>
+                <div class="col col-3">
+                    <div class="copy-wrap">3</div>
+                </div>
+            </div>
         </div>
+        <!-- /grid -->
 
-        <div class="row">
+    </section>
 
-            <div class="col col-6">
-                <div class="copy-wrap">
-                    6
-                </div>
-            </div>
-            <div class="col col-6">
-                <div class="copy-wrap">
-                    6
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row">
-
-            <div class="col col-7">
-                <div class="copy-wrap">
-                    7
-                </div>
-            </div>
-            <div class="col col-5">
-                <div class="copy-wrap">
-                    5
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row">
-
-            <div class="col col-8">
-                <div class="copy-wrap">
-                    8
-                </div>
-            </div>
-            <div class="col col-4">
-                <div class="copy-wrap">
-                    4
-                </div>
-            </div>
-
-        </div>
-
-
-        <div class="row">
-
-            <div class="col col-9">
-                <div class="copy-wrap">
-                    9
-                </div>
-            </div>
-            <div class="col col-3">
-                <div class="copy-wrap">
-                    3
-                </div>
-            </div>
-
-        </div>
-    </div>
 </div>
