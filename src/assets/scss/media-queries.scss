@@ -42,15 +42,12 @@
 
   //mod-buttons
   table[class="body"] .mod-buttons {
-    background: orange !important;
     width: 100% !important;
   }
   table[class="body"] .button {
-    background: orange !important;
     width: 100% !important;
   }
   table[class="body"] .mod-booknow {
-    background: orange !important;
     width: 100% !important;
   }
 
@@ -68,4 +65,20 @@
   table[class="body"] .columns.mod-footer td.one {
     width: 25% !important;
   }
+  // override hardcoded height on strapline
+  table[class="body"] .mod-strapline-td {
+	height: auto !important;
+  }
+
+  table[class="body"] .mod-strapline-img, table[class="body"] .mod-banner-img {
+  	width: 90% !important;
+  }
+
+	table[class="body"] .mod-booknow-a {
+		padding-top: 0 !important;
+	}
+	
+	table[class="body"] .header-bat-logo-img {
+		margin-left:5% !important;
+	}
 }
