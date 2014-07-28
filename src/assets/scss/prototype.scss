@@ -175,15 +175,16 @@ code {
 
 blockquote {
   display: block;
-  margin: 12px 24px;
+  margin: 24px 36px;
   //border-left: 1px solid $bat-color-french-blue;
-  background: $bat-color-pillar-box-lighter;
-  padding: 5px 10px;
+  background: lighten($bat-color-pillar-box-lighter, 10%);
+  padding: 7px 12px;
   border-radius: $base-border-radius;
 
   p {
     margin: 0;
     font-family: $base-font-family;
+    color: $bat-color-pillar-box-dark;
     //font-style: italic;
   }
 }
@@ -193,7 +194,9 @@ blockquote {
     margin: 24px 0;
     padding: 0 0 24px;
     border-bottom: 1px dotted $bat-color-grey;
-
+    p.lead {
+      font-size: 18px;
+    }
   }
   h1:first-child {
     margin: 12px 0 18px;
