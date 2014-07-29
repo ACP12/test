@@ -92,10 +92,6 @@ table.mod-terms tr td.mod-terms-text {
   padding: 0 15px 15px 15px;
 }
 
-table.mod-buttons tr td {
-  padding: 5px 15px;
-}
-
 table.mod-review td.review-stars {
   padding: 5px 0 5px 15px;
 }
@@ -199,3 +195,5 @@ td.footer-text {
 .footer-text {
   color: $bat-color-graphite-light;
 }
+
+.mod-buttons-td { margin-top: 10px; border-bottom: 5px solid white;}
