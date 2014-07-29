@@ -6,9 +6,7 @@ module.exports = function (processor) {
 
     processor.registerBlockType('gridSymbol', function (content, block, blockLine, blockContent) {
 
-        var eems = '_' + block.asset + '__';
-        var result = content.replace(blockLine, eems);
+        return content.replace(blockLine, block.asset);
 
-        return result;
     });
 };
