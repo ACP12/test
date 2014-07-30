@@ -68,25 +68,25 @@ table.large-button td {
   padding: 12px 0;
 }
 
-table.button:hover td,
-table.button:visited td,
-table.button:active td {
-  background: $bat-color-pillar-box-dark !important;
-}
+//table.button:hover td,
+//table.button:visited td,
+//table.button:active td {
+//  background: $bat-color-pillar-box-dark !important;
+//}
+//
+//table.button:hover td a,
+//table.button:visited td a,
+//table.button:active td a {
+//  color: #fff !important;
+//}
 
-table.button:hover td a,
-table.button:visited td a,
-table.button:active td a {
-  color: #fff !important;
-}
-
-table.button:hover td,
-table.tiny-button:hover td,
-table.small-button:hover td,
-table.medium-button:hover td,
-table.large-button:hover td {
-  background: $bat-color-pillar-box-dark !important;
-}
+//table.button:hover td,
+//table.tiny-button:hover td,
+//table.small-button:hover td,
+//table.medium-button:hover td,
+//table.large-button:hover td {
+//  background: $bat-color-pillar-box-dark !important;
+//}
 
 .lead, p.lead, p.lede, p.leed {
   font-size: $font-med + 2;
@@ -103,16 +103,16 @@ table.secondary td a {
   color: $bat-color-white;
 }
 
-table.secondary:hover td {
-  background: $bat-color-french-blue-dark !important;
-  color: $bat-color-white;
-}
-
-table.secondary:hover td a,
-table.secondary td a:visited,
-table.secondary:active td a {
-  color: $bat-color-white !important;
-}
+//table.secondary:hover td {
+//  background: $bat-color-french-blue-dark !important;
+//  color: $bat-color-white;
+//}
+//
+//table.secondary:hover td a,
+//table.secondary td a:visited,
+//table.secondary:active td a {
+//  color: $bat-color-white !important;
+//}
 
 table.columns .text-pad,
 table.column .text-pad {
