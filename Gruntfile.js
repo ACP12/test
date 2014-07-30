@@ -11,19 +11,29 @@ module.exports = function (grunt) {
             tgtacct: '',
 
             accounts: {
-
-                jim: { name: 'jim', email: 'jim@bookatable.com'},
-                outlook: { name: 'YuppySoul', email: 'yuppysoul@outlook.com' },
-                lbtest: { name: 'LB Test 08', email: 'lbtest08@gmail.com' },
-                default: { name: 'Ben', email: 'ben.warren@bookatable.com' }
-
+                jim: {
+                    name:   'jim',
+                    email:  'jim@bookatable.com'
+                },
+                outlook: {
+                    name:   'YuppySoul',
+                    email:  'yuppysoul@outlook.com'
+                },
+                lbtest: {
+                    name:   'LB Test 08',
+                    email:  'lbtest08@gmail.com'
+                },
+                default: {
+                    name:   'Ben',
+                    email:  'ben.warren@bookatable.com'
+                }
             }
 
         },
 
         assemble: {
+
             options: {
-                //layout: 'src/layouts/default.hbs',
                 layoutdir: 'src/layouts/',
                 layoutext: '.hbs',
                 partials: ['src/partials/**/*.hbs'],
@@ -38,7 +48,10 @@ module.exports = function (grunt) {
         },
 
         clean: {
-            all: ['dist/*.html', 'dist/*.css']
+            all: [
+                'dist/*.html',
+                'dist/*.css'
+            ]
         },
 
         connect: {
@@ -95,6 +108,7 @@ module.exports = function (grunt) {
         },
 
         premailer: {
+
             simple: {
                 options: {},
                 files: {
@@ -109,6 +123,7 @@ module.exports = function (grunt) {
                 options: {
                     style: 'compact'
                 },
+
                 files: {
                     'dist/assets/css/style.css': 'src/assets/scss/style.scss',
                     'dist/assets/css/prototype.css': 'src/assets/scss/prototype.scss'
@@ -120,10 +135,12 @@ module.exports = function (grunt) {
         processhtml: {
 
             dist: {
+
                 options: {
                     process: true,
                     customBlockTypes: ['src/custom-blocks/addGridSymbols.js']
                 },
+
                 files:
                     [{
                         expand: true,
@@ -151,6 +168,7 @@ module.exports = function (grunt) {
 
                     ]
                 },
+
                 files: {
                     'dist/assets/css/style.css': ['dist/index.html']
                 }
@@ -162,10 +180,12 @@ module.exports = function (grunt) {
             options: {
                 livereload: true
             },
+
             css: {
                 files: 'src/assets/scss/*.scss',
                 tasks: 'sass'
             },
+
             template: {
                 files: 'src/**/*.hbs',
                 tasks: 'assemble'
@@ -192,14 +212,18 @@ module.exports = function (grunt) {
     grunt.registerTask('email2', ['premailer', 'nodemailer']);
 
 
-    // Allow target page & recipient params to be passed from
+    // Allow target page & recipient params to be
+    // passed from terminal/command line
+
     // @param taskName: the grunt task to run
     // @param page: the name of the .hbs page template to send
     // @param acct: the account name of the recipient [optional]
-    // Example: grunt send:email2:stardeal:outlook
-    // Would run the 'email2' task, sending the 'stardeal' page to the 'outlook' account
-    // as configured at the beginning of this Grunt file.
+
+    // E.g grunt send:taskname:pagename[:account]
+    // Accounts are defined in the config.mail object
+    // at the beginning of this Grunt file.
     // ----------------------------------------------
+
     grunt.registerTask('send', 'Send target page as email test', function (taskName, page, acct) {
 
         var to = grunt.config('mail').accounts[acct];

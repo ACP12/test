@@ -11,6 +11,7 @@ $btn-height: 44px;
 // Mixins
 // -----------------
 // Calculate grid widths
+
 @mixin colWidth($cols) {
   width: ( $cols * ( $col-width + $gutter-width ) ) - $gutter-width;
 }
@@ -48,9 +49,10 @@ $btn-height: 44px;
   @extend .clearfix;
 }
 
-// Index
+// Page index
 // --------------
 .list-group {
+
   margin: 24px 0;
   border: 1px solid $bat-color-grey-light;
   border-radius: $base-border-radius;
@@ -67,15 +69,16 @@ $btn-height: 44px;
       background: $bat-color-french-blue-superlight;
     }
   }
+
   .list-group-item-heading {
     font-size: 21px;
     font-weight: bold;
     color: $bat-color-grey-darker;
   }
+
   .list-group-item-text {
     color: $bat-color-grey-dark;
   }
-
 }
 
 // Buttons
@@ -233,7 +236,7 @@ $btn-height: 44px;
 
     blockquote {
       display: block;
-      margin: 24px 36px;
+      margin: 24px 12px;
       background: lighten($bat-color-pillar-box-lighter, 10%);
       padding: 7px 12px;
       border-radius: $base-border-radius;
