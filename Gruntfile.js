@@ -204,13 +204,38 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-uncss');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('default', ['clean', 'assemble', 'sass', 'connect:dev', 'watch']);
-    grunt.registerTask('eems', ['clean', 'assemble', 'sass', 'processhtml', 'connect:dev', 'watch']);
-    grunt.registerTask('premail', ['premailer']);
-    grunt.registerTask('small', ['uncss']);
-    grunt.registerTask('email', ['uncss', 'premailer', 'nodemailer']);
-    grunt.registerTask('email2', ['premailer', 'nodemailer']);
 
+    grunt.registerTask('serve', [
+        'clean',
+        'assemble',
+        'sass',
+        'connect:dev',
+        'watch'
+    ]);
+
+    grunt.registerTask('build', [
+        'clean',
+        'assemble',
+        'sass',
+        'processhtml',
+        'connect:dev',
+        'watch'
+    ]);
+
+    grunt.registerTask('default',[
+        'serve'
+    ]);
+
+    grunt.registerTask('testmail', [
+        'premailer',
+        'nodemailer'
+    ]);
+
+    grunt.registerTask('testmail-uncss', [
+        'uncss',
+        'premailer',
+        'nodemailer'
+    ]);
 
     // Allow target page & recipient params to be
     // passed from terminal/command line
@@ -219,7 +244,8 @@ module.exports = function (grunt) {
     // @param page: the name of the .hbs page template to send
     // @param acct: the account name of the recipient [optional]
 
-    // E.g grunt send:taskname:pagename[:account]
+    // E.g grunt send:testmail:pagename[:account]
+
     // Accounts are defined in the config.mail object
     // at the beginning of this Grunt file.
     // ----------------------------------------------
