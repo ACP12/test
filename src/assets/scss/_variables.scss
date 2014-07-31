@@ -106,16 +106,12 @@ $base-h3-font-size: $font-lg;
 
 $quote-font-size: $font-lg;
 
-$base-line-height: $base-font-size;
+$base-line-height: 1;
 $base-margin: 15px;
 $base-border-radius: 3px;
 
 $base-padding: 15px;
-$large-padding: 20px;
-$sm-padding: 10px;
-$xs-padding: 5px;
-
-
-
-
-
+$lg-padding: $base-padding + $base-padding / 3;
+// base-padding is considered medium
+$sm-padding: $base-padding - $base-padding / 3;
+$xs-padding: $base-padding / 3;

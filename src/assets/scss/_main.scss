@@ -23,6 +23,19 @@ table.columns .text-pad-top {
   padding-top: $base-padding;
 }
 
+
+// new padding sizes not defined in Zurb INK
+
+table.columns .text-pad-sm {
+  padding-left: $sm-padding;
+  padding-right: $sm-padding;
+}
+
+table.columns .text-pad-lg {
+  padding-left: $lg-padding;
+  padding-right: $lg-padding;
+}
+
 // THEMES
 .theme-french {
   background: $bat-color-french-blue;
