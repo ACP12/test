@@ -526,12 +526,7 @@ table.palette {
 @media only screen and (min-width: 580px) {
 
   .row {
-
     width: 580px;
-    margin: $font-med auto $font-med;
-    padding: 0;
-    @extend .clearfix;
-
   }
 
   .col {
