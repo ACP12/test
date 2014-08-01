@@ -13,9 +13,9 @@ published:  true
     <td class="wrapper last theme-lemon">
       <table class="twelve columns">
         <tr>
-          <td class="theme-lemon center" align="center" valign="top">
+          <td class="theme-pillar-box center" align="center" valign="top">
             <center>
-              {{> guide-hero}}
+              {{!> guide-hero}}
             </center>
           </td>
           <td class="expander"></td>
@@ -30,28 +30,7 @@ published:  true
 <table class="row">
   <tr>
     <td class="wrapper last theme-lemon">
-      <table class="twelve columns">
-        <tr>
-          <td class="theme-lemon" align="left" valign="top">
-            {{> guide-intro-text}}
-            {{subtract object.a 5}}
-            
-            {{#contains culture "en"}}
-             English
-            {{else}}
-                Not English.
-            {{/contains}}
-            
-            {{#is culture "en-GB"}}
-                <h1> culture = {{culture}}</h1>
-            {{else}}
-                <h1> other </h1>
-            {{/is}}
-            
-          </td>
-          <td class="expander"></td>
-        </tr>
-      </table>
+      {{> guide-intro-text}}        
     </td>
   </tr>
 </table>
@@ -64,7 +43,7 @@ published:  true
       <table class="twelve columns">
         <tr>
           <td class="theme-lemon" align="left" valign="top">    
-            {{> guide-top-blogs}}
+            {{!> guide-top-blogs}}
           </td>
           <td class="expander"></td>
         </tr>
@@ -73,17 +52,17 @@ published:  true
   </tr>
 </table>
 <!-- TOP BLOGS END -->
-{{> divider}}
+{{!> divider}}
 <!-- NEW RESTAURANTS -->
 <table class="block-grid two-up">
   <tr>
     <td>
 
-      {{> guide-new-rest-block }}
+      {{!> guide-new-rest-block }}
 
     </td><td> <!-- Make sure the tags are directly next to each other -->
 
-      {{> guide-new-rest-block }}
+      {{!> guide-new-rest-block }}
 
     </td>
   </tr>
@@ -93,11 +72,11 @@ published:  true
   <tr>
     <td class="theme-soup">
 
-      {{> guide-new-rest-block }}
+      {{!> guide-new-rest-block }}
 
     </td><td class="theme-gold"> <!-- Make sure the tags are directly next to each other -->
 
-      {{> guide-new-rest-block }}
+      {{!> guide-new-rest-block }}
 
     </td>
   </tr>
@@ -111,7 +90,7 @@ published:  true
       <table class="twelve columns">
         <tr>
           <td class="theme-gold" align="left" valign="top">    
-            {{> dontmiss-intro}}
+            {{!> dontmiss-intro}}
           </td>
           <td class="expander"></td>
         </tr>
@@ -128,7 +107,7 @@ published:  true
         <tr>
           <td>
 
-            {{> dontmiss-1}}
+            {{!> dontmiss-1}}
 
           </td>
           <td class="expander"></td>
@@ -160,7 +139,7 @@ published:  true
         <tr>
           <td>
 
-            {{> dontmiss-1}}
+            {{!> dontmiss-1}}
 
           </td>
           <td class="expander"></td>

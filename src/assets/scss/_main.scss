@@ -11,8 +11,24 @@ body, .body {
 }
 
 // OVERRIDES
-.pad-zero, td.pad-zero {
+.text-pad-zero, td.text-pad-zero, .text-pad-zero {
   padding: 0;
+}
+
+td.text-pad-top-zero, .text-pad-top-zero {
+  padding-top: 0;
+}
+
+td.text-pad-right-zero, .text-pad-right-zero {
+  padding-right: 0;
+}
+
+td.text-pad-bottom-zero, .text-pad-bottom-zero {
+  padding-bottom: 0;
+}
+
+td.text-pad-left-zero, .text-pad-left-zero {
+  padding-left: 0;
 }
 
 table.columns .text-pad-bottom {
@@ -35,6 +51,15 @@ table.columns .text-pad-lg {
   padding-left: $lg-padding;
   padding-right: $lg-padding;
 }
+
+table.columns .text-pad-full {
+  padding-top: $base-padding;
+  padding-right: $base-padding;
+  padding-bottom: $base-padding;
+  padding-left: $base-padding; 
+}
+
+
 
 // THEMES
 .theme-french {
