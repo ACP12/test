@@ -23,6 +23,10 @@ module.exports = function (grunt) {
                     name:   'LB Test 08',
                     email:  'lbtest08@gmail.com'
                 },
+                yahoo: {
+                    name:   'Ben (Yahoo)',
+                    email:  'bwarren@btinternet.com'
+                },
                 default: {
                     name:   'Ben',
                     email:  'ben.warren@bookatable.com'
