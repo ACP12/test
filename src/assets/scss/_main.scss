@@ -196,6 +196,8 @@ td.footer-text {
   line-height: 1;
 }
 
+.mod-header-text td, .mod-header-text h2, .mod-header-text h3, .mod-header-text a {line-height: 1;}
+
 .mod-header-text h2 {
   color: $bat-color-french-blue-lighter;
 }
@@ -240,3 +242,6 @@ td.footer-text {
 }
 
 .mod-buttons-td { margin-top: 10px; border-bottom: 5px solid white;}
+
+// useful for images which inherit other line-heights which can manifest huge gaps below.
+.reset-line-height {line-height:1;}
