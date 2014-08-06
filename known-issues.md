@@ -7,4 +7,8 @@
 - All email text sometimes revert to the default serif as detailed here: (http://www.emailonacid.com/forum/viewthread/183/#788)
 
 ## Outlook.com
-   - Retina images refuse to stay within their containing box on outlook.com when viewed in Internet Explorer if the height and width do not conform to the same ratio as the original image.
+- Retina images refuse to stay within their containing box on outlook.com when viewed in Internet Explorer if the height and width do not conform to the same ratio as the original image.
+
+## grunt-premailer
+
+- Premailer strips out some CSS that we want to retain in head (e.g. button :hover styles)
