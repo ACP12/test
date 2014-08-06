@@ -1,6 +1,10 @@
 /*  Media Queries */
 
 @media only screen and (max-width: 600px) {
+  // override 95% from Ink
+  table[class="body"] .container {
+    width: 100% !important;
+  }
   // on mobile super border must die!
   table[class="body"] .super-border {
     padding-left: 0 !important;
