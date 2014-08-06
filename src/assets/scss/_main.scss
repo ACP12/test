@@ -261,3 +261,26 @@ td.super-border-right, .super-border-right {
 
 // useful for images which inherit other line-heights which can manifest huge gaps below.
 .reset-line-height {line-height:1;}
+
+// HOVERS 
+
+table.button:hover td {
+  background: $bat-color-pillar-box-dark !important;
+}
+
+table.button:hover td a {
+  color: $bat-color-white !important;
+}
+
+table.button:hover td {
+  background: $bat-color-pillar-box-dark !important;
+}
+
+table.secondary:hover td {
+  background: $bat-color-french-blue-dark !important;
+  color:$bat-color-white;
+}
+
+table.secondary:hover td a {
+  color: $bat-color-white !important;
+}
