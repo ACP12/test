@@ -19,6 +19,13 @@ body, .body {
   max-height: 10px;
 }
 
+.divider-double {
+  background: transparent;
+  height: $lg-padding;
+  min-height: $lg-padding;
+  max-height: $lg-padding;
+}
+
 // OVERRIDES
 .text-pad-zero, td.text-pad-zero, .text-pad-zero {
   padding: 0;
@@ -46,6 +53,10 @@ table.columns .text-pad-bottom {
 
 table.columns .text-pad-top {
   padding-top: $base-padding;
+}
+
+table.columns .text-pad-top-lg {
+  padding-top: $lg-padding;
 }
 
 
