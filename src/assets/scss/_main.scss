@@ -88,21 +88,21 @@ table.columns .text-pad-full {
 .mod-header-text td, .mod-header-text h2, .mod-header-text h3, .mod-header-text a {line-height: 1;}
 
 .mod-header-text h2 {
-  color: $bat-color-french-blue-lighter;
+  color: $bat-color-french-blue-light;
 }
 
 .mod-header-text h2 a {
-  color: $bat-color-french-blue-lighter;
+  color: $bat-color-french-blue-light;
 }
 
 .mod-header-text a:hover h2 {
-  color: $bat-color-french-blue-lighter;
+  color: $bat-color-french-blue-light;
 }
 
 .mod-header-text:hover h2 a,
 .mod-header-text h2 a:visited,
 .mod-header-text:active h2 a {
-  color: $bat-color-french-blue-lighter !important;
+  color: $bat-color-french-blue-light !important;
 }
 
 //
