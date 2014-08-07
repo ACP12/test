@@ -12,3 +12,7 @@
 ## grunt-premailer
 
 - Premailer strips out some CSS that we want to retain in head (e.g. button :hover styles)
+
+## grunt-processhtml
+
+- When replacing an attribute (e.g. src="blah") in an HTML tag every attribute after the one in question gets deleted. Need more testing of this.

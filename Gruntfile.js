@@ -174,7 +174,7 @@ module.exports = function (grunt) {
                 },
 
                 files: {
-                    'dist/assets/css/style.css': ['dist/index.html']
+                    'dist/assets/css/style.css': ['dist/*.html']
                 }
             }
         },
