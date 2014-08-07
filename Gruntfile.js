@@ -12,24 +12,24 @@ module.exports = function (grunt) {
 
             accounts: {
                 jim: {
-                    name:   'jim',
-                    email:  'jim@bookatable.com'
+                    name: 'jim',
+                    email: 'jim@bookatable.com'
                 },
                 outlook: {
-                    name:   'YuppySoul',
-                    email:  'yuppysoul@outlook.com'
+                    name: 'YuppySoul',
+                    email: 'yuppysoul@outlook.com'
                 },
                 lbtest: {
-                    name:   'LB Test 08',
-                    email:  'lbtest08@gmail.com'
+                    name: 'LB Test 08',
+                    email: 'lbtest08@gmail.com'
                 },
                 yahoo: {
-                    name:   'Ben (Yahoo)',
-                    email:  'bwarren@btinternet.com'
+                    name: 'Ben (Yahoo)',
+                    email: 'bwarren@btinternet.com'
                 },
                 default: {
-                    name:   'Ben',
-                    email:  'ben.warren@bookatable.com'
+                    name: 'Ben',
+                    email: 'ben.warren@bookatable.com'
                 }
             }
 
@@ -145,13 +145,14 @@ module.exports = function (grunt) {
                     customBlockTypes: ['src/custom-blocks/addGridSymbols.js']
                 },
 
-                files:
-                    [{
+                files: [
+                    {
                         expand: true,
                         cwd: 'dist',
                         src: ['*.html'],
                         dest: 'dist'
-                    }]
+                    }
+                ]
             }
         },
 
@@ -174,7 +175,8 @@ module.exports = function (grunt) {
                 },
 
                 files: {
-                    'dist/assets/css/style.css': ['dist/*.html']
+
+                    'dist/assets/css/style.css': ['dist/<%= mail.tgtpage %>.html']
                 }
             }
         },
@@ -226,7 +228,7 @@ module.exports = function (grunt) {
         'watch'
     ]);
 
-    grunt.registerTask('default',[
+    grunt.registerTask('default', [
         'serve'
     ]);
 
@@ -235,11 +237,15 @@ module.exports = function (grunt) {
         'nodemailer'
     ]);
 
-    grunt.registerTask('testmail-uncss', [
-        'uncss',
-        'premailer',
-        'nodemailer'
-    ]);
+    // Remove unused CSS from targeted file
+    // @param page: the page to clean up
+    // ---------------------------------------
+    grunt.registerTask('clean-css', 'Remove unused CSS', function (page) {
+
+        grunt.config('mail', { 'tgtpage': page });
+        grunt.task.run('uncss');
+
+    });
 
     // Allow target page & recipient params to be
     // passed from terminal/command line
