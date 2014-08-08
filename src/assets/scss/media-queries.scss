@@ -19,17 +19,17 @@
     width: 135px !important;
     height: 26px;
   }
-  table[class="body"] img.icon-social-google,
-  table[class="body"] img.icon-social-facebook,
-  table[class="body"] img.icon-social-twitter {
-    width: 40px !important;
-    height: 40px !important;
-    margin-left: 10%;
-  }
-  table[class="body"] img.icon-social-ios {
-    width: 118px !important;
-    height: 40px !important;
-  }
+//  table[class="body"] img.icon-social-google,
+//  table[class="body"] img.icon-social-facebook,
+//  table[class="body"] img.icon-social-twitter {
+//    width: 40px !important;
+//    height: 40px !important;
+//    margin-left: 10%;
+//  }
+//  table[class="body"] img.icon-social-ios {
+//    width: 118px !important;
+//    height: 40px !important;
+//  }
   table[class="body"] table.mod-footer tr td {
     width: auto !important;
   }
@@ -90,11 +90,13 @@
     padding: 0 $base-padding !important;
   }
   
-  table[class="body"] table.columns td.sub-columns,
+table[class="body"] table.columns td.sub-columns,
 table[class="body"] table.column td.sub-columns,
 table[class="body"] table.columns td.sub-column,
 table[class="body"] table.column td.sub-column {
-  padding-left: 10px !important;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
 }
+  
 
 }
