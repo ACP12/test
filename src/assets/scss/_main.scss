@@ -31,31 +31,39 @@ table.columns .text-pad-zero, td.text-pad-zero, .text-pad-zero {
   padding: 0;
 }
 
-table.columns td.text-pad-top-zero, .text-pad-top-zero {
+table.columns td.text-pad-top-zero, td.text-pad-top-zero, text-pad-top-zero {
   padding-top: 0;
 }
 
-table.columns td.text-pad-right-zero, .text-pad-right-zero {
+table.columns td.text-pad-right-zero, td.text-pad-right-zero, .text-pad-right-zero {
   padding-right: 0;
 }
 
-table.columns td.text-pad-bottom-zero, .text-pad-bottom-zero {
+table.columns td.text-pad-bottom-zero, td.text-pad-bottom-zero, .text-pad-bottom-zero {
   padding-bottom: 0;
 }
 
-table.columns td.text-pad-left-zero, .text-pad-left-zero {
+table.columns td.text-pad-left-zero, td.text-pad-left-zero, .text-pad-left-zero {
   padding-left: 0;
 }
 
-table.columns .text-pad-bottom {
-  padding-bottom: $base-padding;
-}
-
-table.columns .text-pad-top {
+table.columns .text-pad-top, td.text-pad-top, .text-pad-top {
   padding-top: $base-padding;
 }
 
-table.columns .text-pad-top-lg {
+table.columns .text-pad-right, td.text-pad-right, text-pad-right {
+  padding-bottom: $base-padding;
+}
+
+table.columns .text-pad-bottom, td.text-pad-bottom, .text-pad-bottom {
+  padding-bottom: $base-padding;
+}
+
+table.columns .text-pad-left, td.text-pad-left, .text-pad-left {
+  padding-left: $base-padding;
+}
+
+table.columns .text-pad-top-lg, td.text-pad-top-lg, .text-pad-top-lg {
   padding-top: $lg-padding;
 }
 
@@ -225,6 +233,12 @@ td.footer-text {
 }
 .footer-text {
   color: $bat-color-graphite-light;
+}
+
+// BOOKATABLE GUIDE
+
+.mod-new-restaurants .two-up td {
+  width: 290px;
 }
 
 // THEMES
