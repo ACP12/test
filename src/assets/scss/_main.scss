@@ -206,9 +206,19 @@ table.mod-terms tr td.mod-terms-text {
 .mod-banner-td, .mod-banner-img, .mod-banner-a {
   line-height: 1;
 }
+
 .mod-banner-img {
   width:460px;
   height:56px;
+}
+
+.mod-banner-beta-td, .mod-banner-beta-img, .mod-banner-beta-a {
+  line-height: 1;
+}
+
+.mod-banner-img-beta {
+  width:580px;
+  height:60px;
 }
 
 // preference center
@@ -237,6 +247,9 @@ td.footer-text {
 
 // BOOKATABLE GUIDE
 
+
+
+// new restaurants
 .mod-new-restaurants .two-up td {
   width: 290px;
 }
@@ -298,7 +311,7 @@ td.super-border-right, .super-border-right {
 .mod-buttons-td { margin-top: 10px; border-bottom: 5px solid white;}
 
 // useful for images which inherit other line-heights which can manifest huge gaps below.
-.reset-line-height {line-height:1;}
+.reset-line-height {mso-line-height-rule:exactly;line-height:1;}
 
 // HOVERS 
 
