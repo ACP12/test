@@ -15,7 +15,7 @@ published:  true
         <tr>
           <td class="theme-pillar-box center" align="center" valign="top">
             <center>
-              {{!> guide-hero}}
+              {{> guide-hero}}
             </center>
           </td>
           <td class="expander"></td>
@@ -25,17 +25,17 @@ published:  true
   </tr>
 </table>
 <!-- HERO END -->
-{{> divider}}
+{{!> divider}}
 <!-- INTRO TEXT -->
 <table border="0" cellpadding="0" cellspacing="0" class="row">
   <tr>
     <td class="wrapper last theme-lemon">
-      {{!> guide-intro-text}}        
+      {{> guide-intro-text}}        
     </td>
   </tr>
 </table>
 <!-- INTRO TEXT END -->
-{{> divider}}
+
 <!-- TOP BLOGS -->
 <table border="0" cellpadding="0" cellspacing="0" class="row">
   <tr>
@@ -60,9 +60,9 @@ published:  true
     <!-- NEW RESTAURANTS -->   
     <table border="0" cellpadding="0" cellspacing="0" class="block-grid two-up">
       <tr>
-        <td class="theme-soup text-pad-zero reset-line-height">
+        <td class="text-pad-zero reset-line-height theme-goldie-lookin-chain">
           {{> guide-new-rest-block }}
-        </td><td class="theme-gold text-pad-zero reset-line-height"> <!-- Make sure the tags are directly next to each other -->
+        </td><td class="text-pad-zero reset-line-height theme-goldie-lookin-chain"> <!-- Make sure the tags are directly next to each other -->
           {{> guide-new-rest-block }}
         </td>
       </tr>
@@ -71,8 +71,6 @@ published:  true
   </td>
 </tr>
 </table>
-
-
 {{> divider}}
 <!-- DON'T MISS -->
 <table border="0" cellpadding="0" cellspacing="0" class="row">
@@ -80,8 +78,8 @@ published:  true
     <td class="wrapper last theme-gold">
       <table border="0" cellpadding="0" cellspacing="0" class="twelve columns">
         <tr>
-          <td class="theme-gold" align="left" valign="top">    
-            {{!> dontmiss-intro}}
+          <td class="theme-gold text-pad-full" align="left" valign="top">    
+            {{> dontmiss-intro}}
           </td>
           <td class="expander"></td>
         </tr>
@@ -90,15 +88,15 @@ published:  true
   </tr>
 </table>
 
-<table border="0" cellpadding="0" cellspacing="0" class="row theme-pillar-box">
+<table border="0" cellpadding="0" cellspacing="0" class="row theme-grey-lighter">
   <tr>
     <td class="wrapper">
 
-      <table border="0" cellpadding="0" cellspacing="0" class="nine columns theme-soup">
+      <table border="0" cellpadding="0" cellspacing="0" class="eight columns theme-grey-lighter">
         <tr>
-          <td>
+          <td class="text-pad-full">
 
-            {{!> dontmiss-1}}
+            {{> dontmiss-1}}
 
           </td>
           <td class="expander"></td>
@@ -106,45 +104,25 @@ published:  true
       </table>
 
     </td>
-    <td class="wrapper last">
+    <td class="wrapper last theme-grey-lighter">
 
-      <table border="0" cellpadding="0" cellspacing="0" class="three columns theme-pillar-box">
+      <table border="0" cellpadding="0" cellspacing="0" class="four columns">
         <tr>
-          <td>
-
-
+          <td class="text-pad-top dontmiss-img-td" style="width: 165px; height: 110px;">
+            <img class="dontmiss-img" src="http://placehold.it/330x220" width="165" height="110" alt="">
           </td>
           <td class="expander"></td>
         </tr>
-      </table>
-
-    </td>
-  </tr>
-</table>
-
-<table border="0" cellpadding="0" cellspacing="0" class="row theme-pillar-box">
-  <tr>
-    <td class="wrapper">
-
-      <table border="0" cellpadding="0" cellspacing="0" class="nine columns theme-soup">
+        
         <tr>
-          <td>
-
-            {{!> dontmiss-1}}
-
-          </td>
-          <td class="expander"></td>
-        </tr>
-      </table>
-
-    </td>
-    <td class="wrapper last">
-
-      <table border="0" cellpadding="0" cellspacing="0" class="three columns theme-pillar-box">
-        <tr>
-          <td>
-
-
+          <td class="text-pad-right text-pad-bottom">
+          <table class="button">
+            <tr>
+              <td>
+                <a href="#">BOOK</a>
+              </td>
+            </tr>
+          </table>
           </td>
           <td class="expander"></td>
         </tr>
@@ -153,4 +131,7 @@ published:  true
     </td>
   </tr>
 </table>
+
+
+
 <!-- TOP BLOGS END -->

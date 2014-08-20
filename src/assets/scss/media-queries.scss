@@ -102,5 +102,18 @@ table[class="body"] table.column td.sub-column {
 //    width: 100% !important;
 //  }
   
+  table[class="body"] img.dontmiss-img {
+    margin: 0 auto $base-margin auto !important;
+    float: none !important;
+  }
+  table[class="body"] td.dontmiss-img-td {
+    padding-top: 0 !important;
+  }
+  
+  table[class="body"] img.icon-marker {
+    width: 10px !important;
+    height: 16px !important;
+  }
+  
 
 }

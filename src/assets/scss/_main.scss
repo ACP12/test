@@ -12,6 +12,10 @@ body, .body {
   background: $bat-color-graphite;
 }
 
+body .guide, .body.guide {
+  background: $bat-color-white;
+}
+
 .divider {
   background: transparent;
   height: 10px;
@@ -52,7 +56,7 @@ table.columns .text-pad-top, td.text-pad-top, .text-pad-top {
 }
 
 table.columns .text-pad-right, td.text-pad-right, text-pad-right {
-  padding-bottom: $base-padding;
+  padding-right: $base-padding;
 }
 
 table.columns .text-pad-bottom, td.text-pad-bottom, .text-pad-bottom {
@@ -249,10 +253,14 @@ td.footer-text {
 
 
 
+
+
 // new restaurants
 .mod-new-restaurants .two-up td {
   width: 290px;
 }
+
+// dont miss
 
 // THEMES
 .theme-french {
@@ -269,6 +277,10 @@ td.footer-text {
 
 .theme-gold {
   background: $bat-color-gold;
+}
+
+.theme-grey-lighter{
+  background: $bat-color-grey-lighter;
 }
 
 .theme-graphite {
@@ -290,6 +302,16 @@ td.footer-text {
 .theme-white {
   background: $bat-color-white;
 }
+
+.theme-hulk-green {
+  background: #598633;
+}
+
+.theme-goldie-lookin-chain {
+  background: #FDBC00;
+}
+
+
 
 // HELPERS
 
