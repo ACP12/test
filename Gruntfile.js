@@ -32,7 +32,6 @@ module.exports = function (grunt) {
                     email: 'ben.warren@bookatable.com'
                 }
             }
-
         },
 
         assemble: {

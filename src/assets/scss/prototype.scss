@@ -3,10 +3,11 @@
 // Extend variables
 // ----------------
 
-$gutter-width: 20px;
-$col-width: 30px;
-$col-total: 12;
-$btn-height: 44px;
+$gutter-width:  20px;
+$col-width:     30px;
+$col-total:     12;
+$btn-height:    48px;
+$radius:        3px;
 
 // Mixins
 // -----------------
@@ -118,6 +119,7 @@ $btn-height: 44px;
   }
 }
 
+
 // Grid utilities
 // -----------------------------------------------------------------------
 
@@ -126,7 +128,7 @@ $btn-height: 44px;
   width: 100%;
   margin: $font-med auto $font-med;
   padding: 0;
-  @extend .clearfix;
+ // @extend .clearfix;
 
 }
 
@@ -143,7 +145,7 @@ $btn-height: 44px;
 .col-5,
 .col-4,
 .col-3 {
-  width: 100%;
+ width: 100%;
 }
 
 .show-grid {
@@ -160,6 +162,7 @@ $btn-height: 44px;
 
   margin: 48px auto 24px;
 
+
   h5 {
     font-size: 18px;
     color: $bat-color-grey;
@@ -175,6 +178,7 @@ $btn-height: 44px;
 // -----------------------------------------------------------------------
 
 .mod-content {
+
   width: 100%;
   margin: 0 0 1em;
   padding-bottom: 1em;
@@ -286,7 +290,7 @@ $btn-height: 44px;
 }
 
 table.palette {
-  widows: 100%;
+  width: 100%;
 
   th {
     font-weight: normal;
@@ -516,17 +520,197 @@ table.palette {
 
 }
 
+.mod-roundup-header {
+
+  h1 {
+    padding: $base-padding;
+    color: $bat-color-pea-soup-light;
+    font-weight: 200;
+    font-size: 24px;
+
+    > img {
+      display: none;
+      height: 24px;
+      width: auto;
+      padding: 6px 8px 0 0;
+    }
+
+    a {
+      //display: none;
+      transition: all .25s ease-out;
+      > img {
+        display: none;
+      }
+    }
+  }
+
+}
+
+.mod-viewall {
+
+  margin: 15px;
+
+  a {
+    display: block;
+    background: $bat-color-pea-soup-lighter;
+    border-radius: $radius;
+    padding: 20px;
+    transition: all .25s ease-out;
+
+    h2 {
+      color: $bat-color-pea-soup-dark;
+      text-align: left;
+      text-transform: uppercase;
+      font-weight: 200;
+      padding: 0;
+      line-height: 1;
+      margin: 0;
+      //font-size: 24px;
+      img {
+        float: right;
+      }
+    }
+    &:hover {
+      background: darken($bat-color-pea-soup-lighter, 5%);
+    }
+
+  }
+
+
+}
+.mod-roundup-item {
+
+  //border-top: 2px solid $bat-color-grey-light;
+  //padding-top: 12px;
+
+  @extend .clearfix;
+
+  h2 {
+    margin: 0;
+    color: $bat-color-graphite-light;
+    transition: color .25s ease-out;
+    &:hover {
+      color: $bat-color-black;
+    }
+  }
+
+  .mod-roundup-item-body {
+    h3 {
+      margin: 8px 0 12px;
+      color: $bat-color-terracotta;
+      transition: color .25s ease-out;
+      &:hover {
+        color: $bat-color-terracotta-dark;
+      }
+    }
+    p {
+      color: $bat-color-cerulean;
+    }
+
+    blockquote {
+      padding: 0;
+      margin: 0;
+      color: $bat-color-grey;
+      font-family: $secondary-font-family;
+     // font-style: italic;
+    }
+
+    cite {
+      margin: 4px 0 0;
+      display: block;
+      color: $bat-color-grey-darker;
+      font-weight: bold;
+      font-style: italic;
+      font-size: 12px;
+      //text-align: right;
+    }
+    .img-wrap {
+      padding: 0;
+    }
+    .copy-wrap {
+      padding:8px 12px;
+    }
+    .btn-primary {
+      background: $bat-color-terracotta;
+      &:hover {
+        background: $bat-color-terracotta-dark;
+      }
+    }
+  }
+}
+
 .star-rating {
-  display: inline-block;
-  img {
+  .stars {
+    display: inline-block;
     width: 25%;
   }
 }
 
+
+
 @media only screen and (min-width: 580px) {
 
+  .mod-roundup-item {
+    //&:not(:first-child) {
+      border-top: 2px dotted $bat-color-pea-soup-lighter;
+      padding-top: 12px;
+    //}
+    h2 {
+      margin: 8px 0 0;
+    }
+
+    .mod-roundup-item-body {
+
+      .btn {
+       // border-radius:  0 0 3px 3px;
+      }
+      .copy-wrap {
+        padding: 0;
+      }
+
+    }
+  }
+  .mod-roundup-header {
+
+    h1 {
+
+      font-size: 36px;
+      padding: 0;
+
+      > img {
+        display: inline-block;
+        height: 24px;
+        width: auto;
+        padding: 6px 8px 0 0;
+      }
+      a {
+        display: inline-block;
+        text-align: right;
+        font-size: 24px;
+        text-transform: uppercase;
+        float: right;
+        padding: 8px 0 0;
+        color: $bat-color-grey;
+
+
+
+        img {
+          display: inline-block;
+          float: right;
+          height: 24px;
+          margin: 0 0 0 8px;
+        }
+      }
+    }
+  }
+  .mod-viewall {
+    margin: 0;
+    text-align: center;
+  }
+
+  // Grid
   .row {
-    width: 580px;
+    max-width: 580px;
   }
 
   .col {
@@ -571,3 +755,4 @@ table.palette {
   }
 
 }
+
