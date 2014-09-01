@@ -114,6 +114,10 @@ table[class="body"] table.column td.sub-column {
     width: 10px !important;
     height: 16px !important;
   }
-  
+
+  table[class="body"] .mod-banner-beta-td, table[class="body"] img.mod-banner-beta-img {
+    width: 94% !important;
+    height: auto !important;
+  }
 
 }
