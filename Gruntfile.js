@@ -184,8 +184,7 @@ module.exports = function (grunt) {
 
             dynamic: {                         // Another target
                 options: {                       // Target options
-                    optimizationLevel: 3,
-                    //use: [mozjpeg()]
+                    optimizationLevel: 3        // Default is 3
                 },
                 files: [{
                     expand: true,                  // Enable dynamic expansion
