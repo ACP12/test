@@ -180,6 +180,22 @@ module.exports = function (grunt) {
             }
         },
 
+        imagemin: {                          // Task
+
+            dynamic: {                         // Another target
+                options: {                       // Target options
+                    optimizationLevel: 3,
+                    //use: [mozjpeg()]
+                },
+                files: [{
+                    expand: true,                  // Enable dynamic expansion
+                    cwd: 'src/',                   // Src matches are relative to this path
+                    src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
+                    dest: 'dist/'                  // Destination path prefix
+                }]
+            }
+        },
+
         watch: {
 
             options: {
@@ -201,6 +217,7 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('assemble');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-nodemailer');
     grunt.loadNpmTasks('grunt-premailer');
@@ -213,6 +230,7 @@ module.exports = function (grunt) {
     grunt.registerTask('serve', [
         'clean',
         'assemble',
+        'imagemin',
         'sass',
         'connect:dev',
         'watch'

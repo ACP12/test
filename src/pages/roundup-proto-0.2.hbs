@@ -1,0 +1,43 @@
+---
+title:      Roundup
+desc:       Prototype of weekly star deal round-up email
+version:    0.2
+region:     London
+culture:    en-GB
+layout:     bookatable-default
+---
+
+<link rel="stylesheet" href="assets/css/prototype.css">
+
+
+<!-- Listings -->
+<table border="0" cellpadding="0" cellspacing="0" class="row">
+
+    <tr>
+        <td class="wrapper last">
+
+            {{> mod-header-roundup-01 }}
+
+            {{> mod-roundup-listings-01 }}
+
+            {{> mod-viewall-01 }}
+
+        </td>
+    </tr>
+
+</table>
+<!-- /Listings -->
+
+
+<!-- PREFERENCE -->
+<table border="0" cellpadding="0" cellspacing="0" class="row">
+    <tr>
+        <td class="wrapper last">
+          {{> stardeal-pref }}
+        </td>
+    </tr>
+</table>
+<!-- PREFERENCE -->
+
+
+{{> divider }}
