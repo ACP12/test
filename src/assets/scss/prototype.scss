@@ -517,16 +517,14 @@ table.palette {
       color: $bat-color-cerulean;
     }
   }
-
 }
 
 .mod-roundup-header {
-
   h1 {
     padding: $base-padding;
     color: $bat-color-turtle-dove;
     font-weight: 200;
-    font-size: 24px;
+    font-size: 28px;
 
     > img {
       display: none;
@@ -558,14 +556,19 @@ table.palette {
     transition: all .25s ease-out;
 
     h2 {
+
       color: $bat-color-pea-soup-dark;
-      text-align: left;
+      text-align: center;
       text-transform: uppercase;
       font-weight: 200;
       padding: 0;
       line-height: 1;
       margin: 0;
-      //font-size: 24px;
+
+      span {
+        font-weight: 700;
+      }
+
       img {
         float: right;
       }
@@ -578,10 +581,8 @@ table.palette {
 
 
 }
-.mod-roundup-item {
 
-  //border-top: 2px solid $bat-color-grey-light;
-  //padding-top: 12px;
+.mod-roundup-item {
 
   @extend .clearfix;
 
@@ -594,9 +595,15 @@ table.palette {
     }
   }
 
+  .rest-feature {
+    background: $bat-color-graphite-light;
+    color: $bat-color-white;
+    padding: 12px 8px;
+  }
+
   .mod-roundup-item-body {
     h3 {
-      margin: 8px 0 12px;
+      margin: 6px 0 12px;
       color: $bat-color-terracotta;
       transition: color .25s ease-out;
       &:hover {
@@ -632,10 +639,65 @@ table.palette {
     }
     .btn-primary {
       background: $bat-color-terracotta;
+
+      border-radius: $radius;
+      margin-top: 8px;
       &:hover {
         background: $bat-color-terracotta-dark;
       }
     }
+    .rest-data {
+      @extend .clearfix;
+      padding: 4px 0 6px;
+      a {
+        font-size: 14px;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+      img {
+        padding-top: 2px;
+      }
+      a.stars {
+        display: block;
+        width: 50%;
+        float: left;
+
+        img {
+          display: inline-block;
+          height: 14px !important;
+          padding-right: 4px;
+         }
+      }
+      a.loc {
+        display: block;
+        width: 50%;
+        float: right;
+        text-align: right;
+
+        img {
+          height: 14px !important;
+          float: right;
+          padding-left: 4px;
+        }
+
+      }
+    }
+    .rest-location {
+      text-align: right;
+      margin-bottom: 4px;
+      a {
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 1;
+        img {
+          display: inline-block;
+          float: right;
+          padding: 6px 0 0 4px;
+          height: 12px !important;
+        }
+      }
+    }
+
   }
 }
 
@@ -656,14 +718,11 @@ table.palette {
       padding-top: 12px;
     //}
     h2 {
-      margin: 8px 0 0;
+      margin: 0 0 0;
     }
 
     .mod-roundup-item-body {
 
-      .btn {
-       // border-radius:  0 0 3px 3px;
-      }
       .copy-wrap {
         padding: 0;
       }
