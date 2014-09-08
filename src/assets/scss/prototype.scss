@@ -173,21 +173,28 @@ $radius:        3px;
   }
 
 }
+.mod-featured-event {
+  @extend .clearfix;
+  padding: 0;
+  margin: 0 0 12px;
+
+}
 
 // MODULES
 // -----------------------------------------------------------------------
 
 .mod-content {
-
+  @extend .clearfix;
   width: 100%;
   margin: 0 0 1em;
   padding-bottom: 1em;
-  border-bottom: 1px solid $bat-color-grey-light;
+  //border-bottom: 1px solid $bat-color-grey-light;
   h1 {
   }
 }
 
 .mod-deal-hero-header {
+  @extend .clearfix;
   background: $bat-color-cerulean;
   h2 {
     color: $bat-color-french-blue-light;
@@ -495,7 +502,7 @@ table.palette {
 }
 
 .mod-deal-local {
-
+  @extend .clearfix;
   background: $bat-color-pea-soup-lighter;
   border-radius: 3px;
 
@@ -512,9 +519,15 @@ table.palette {
 
     h3 {
       color: $bat-color-cerulean;
+      clear: both;
     }
     p {
       color: $bat-color-cerulean;
+    }
+    .star-rating {
+      img {
+        width: 25% !important;
+      }
     }
   }
 }
@@ -707,8 +720,6 @@ table.palette {
     width: 25%;
   }
 }
-
-
 
 @media only screen and (min-width: 580px) {
 
