@@ -63,8 +63,16 @@ table.columns .text-pad-bottom, td.text-pad-bottom, .text-pad-bottom {
   padding-bottom: $base-padding;
 }
 
+table.columns .text-pad-bottom-xs, td.text-pad-bottom-xs, .text-pad-bottom-xs {
+  padding-bottom: $xs-padding;
+}
+
 table.columns .text-pad-left, td.text-pad-left, .text-pad-left {
   padding-left: $base-padding;
+}
+
+table.columns .text-pad-left-sm, td.text-pad-left-sm, .text-pad-left-sm {
+  padding-left: $sm-padding;
 }
 
 table.columns .text-pad-top-lg, td.text-pad-top-lg, .text-pad-top-lg {
@@ -98,6 +106,20 @@ table.columns .text-pad-full {
   padding-right: $base-padding;
   padding-bottom: $base-padding;
   padding-left: $base-padding; 
+}
+
+table.columns .text-pad-full-sm {
+  padding-top: $sm-padding;
+  padding-right: $sm-padding;
+  padding-bottom: $sm-padding;
+  padding-left: $sm-padding; 
+}
+
+table.columns .text-pad-full-xs {
+  padding-top: $xs-padding;
+  padding-right: $xs-padding;
+  padding-bottom: $xs-padding;
+  padding-left: $xs-padding; 
 }
 
 // STAR DEAL STYLES
@@ -251,16 +273,22 @@ td.footer-text {
 
 // BOOKATABLE GUIDE
 
-
-
-
-
 // new restaurants
 .mod-new-restaurants .two-up td {
   width: 290px;
 }
 
 // dont miss
+
+// roundup item
+
+	// marker icon
+	.marker-icon-img, marker-icon-td{width:15px;height: 16px;text-align: right;}
+
+// ROUNDUP STYLES
+
+// 
+
 
 // THEMES
 .theme-french {
@@ -287,6 +315,10 @@ td.footer-text {
   background: $bat-color-graphite;
 }
 
+.theme-graphite-light {
+  background: $bat-color-graphite-light;
+}
+
 .theme-lemon {
   background: $lemon-color;
 }
@@ -311,7 +343,19 @@ td.footer-text {
   background: #FDBC00;
 }
 
+// TEXT COLOUR THEMES
 
+.txtcolor-graphite-light {
+	color: $bat-color-graphite-light;
+}
+
+.txtcolor-terracotta {
+	color: $bat-color-terracotta;
+}
+
+.txtcolor-white {
+	color: #ffffff;
+}
 
 // HELPERS
 
@@ -334,6 +378,22 @@ td.super-border-right, .super-border-right {
 
 // useful for images which inherit other line-heights which can manifest huge gaps below.
 .reset-line-height {mso-line-height-rule:exactly;line-height:1;}
+
+// BUTTONS
+
+table.tertiary td {
+  background: $bat-color-terracotta;
+  border-color: $bat-color-terracotta;
+  color: $bat-color-white;
+}
+
+table.tertiary td a {
+  color: $bat-color-white;
+	font-size: $font-lg;
+	line-height: 1;
+}
+
+
 
 // HOVERS 
 
