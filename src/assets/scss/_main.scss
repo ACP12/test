@@ -283,11 +283,18 @@ td.footer-text {
 // roundup item
 
 	// marker icon
-	.marker-icon-img, marker-icon-td{width:15px;height: 16px;text-align: right;}
+	.marker-icon-img, marker-icon-td{width:12px;height: 16px;text-align: right; float: right;}
 
 // ROUNDUP STYLES
 
-// 
+// roundup header
+
+h1.selects, .selects {color: $bat-color-turtle-dove;margin:0;}
+
+// roundup star deal txt banner
+
+.view-all {color: $bat-color-pea-soup-dark;margin: 0; text-align: center;line-height: 1;}
+.view-all a, {color: $bat-color-pea-soup-dark; line-height: 1;}
 
 
 // THEMES
@@ -331,6 +338,10 @@ td.footer-text {
   background: $bat-color-pea-soup;
 }
 
+.theme-soup-lt {
+  background:$bat-color-pea-soup-lighter;
+}
+
 .theme-white {
   background: $bat-color-white;
 }
@@ -351,6 +362,10 @@ td.footer-text {
 
 .txtcolor-terracotta {
 	color: $bat-color-terracotta;
+}
+
+.txtcolor-turtle {
+	color: $bat-color-turtle-dove;
 }
 
 .txtcolor-white {

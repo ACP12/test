@@ -20,10 +20,18 @@
     height: 26px;
   }
 	
-	table[class="body"] .review-stars img.review-stars-img {
-    width: 35px !important;
-    height: 35px !important;
+	table[class="body"] .review-stars-sm {
+    width: 81px !important;
+    height: 16px !important;
   }
+	
+	table[class="body"] .mod-roundup-content {
+		margin: 0 4% !important;
+	}
+	
+	table[class="body"] .mod-roundup-content td {
+		width: 92% !important;
+	}
 	
 	
 //  table[class="body"] img.icon-social-google,
@@ -97,18 +105,14 @@
     padding: 0 $base-padding !important;
   }
   
-table[class="body"] table.columns td.sub-columns,
-table[class="body"] table.column td.sub-columns,
-table[class="body"] table.columns td.sub-column,
-table[class="body"] table.column td.sub-column {
+table[class="body"] table.mod-footer  td.sub-columns,
+table[class="body"] table.mod-footer td.sub-columns,
+table[class="body"] table.mod-footer  td.sub-column,
+table[class="body"] table.mod-footer td.sub-column {
   padding-left: 5px !important;
   padding-right: 5px !important;
 }
-  
-//  table[class="container"] .block-grid td {
-//    width: 100% !important;
-//  }
-  
+
   table[class="body"] img.dontmiss-img {
     margin: 0 auto $base-margin auto !important;
     float: none !important;
@@ -135,5 +139,29 @@ table[class="body"] table.column td.sub-column {
 	  table[class="body"] .marker-icon-img {
 			width: 13px !important;
   }
+	
+		table[class="body"] h1.selects {
+			font-size: 26px;
+			width: 94% ;
+			margin: 0 auto;
+  }
+	
+			table[class="body"] h2.view-all {
+			width: 96% ;
+  }
+	
+				table[class="body"] td.view-all-td {
+			margin: 0 auto;
+  }
+	
+		table[class="body"] .mod-roundup-content, .mod-roundup-panel {
+		border-top-width: 0 !important;
+	}
+	
+	table[class="body"] .selects-td {
+		padding-left: 15px !important;
+	}
+	
+	table[class="body"] .columns td.six.review-stars-sm-td { width: 42% !important; }
 
 }
