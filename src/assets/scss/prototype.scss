@@ -714,6 +714,14 @@ table.palette {
   }
 }
 
+// LRF Specific styles
+.mod-roundup.mod-roundup-lrf {
+  .rest-feature {
+    background: $lrf-green-jade;
+  }
+}
+
+
 .star-rating {
   .stars {
     display: inline-block;
