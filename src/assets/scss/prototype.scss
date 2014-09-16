@@ -154,6 +154,11 @@ $radius:        3px;
   }
 }
 
+// themes
+.theme-grey {
+  margin: 48px auto 24px;
+  background: #f7f7f7;
+}
 // PAGES
 // -----------------------------------------------------------------------
 .page-index,
@@ -182,7 +187,78 @@ $radius:        3px;
 
 // MODULES
 // -----------------------------------------------------------------------
+.mod-body-predine {
+  padding: 16px;
+  border-radius: 4px;
+  background: $bat-color-white;
+  p {
+    color: $bat-color-graphite-light;
+    font-weight: 200;
+    font-size: 18px;
+    &.lead {
+      font-size: 28px;
+      font-weight: 500;
+    }
+  }
 
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .head {
+    @extend .clearfix;
+    margin-bottom: 36px;
+
+    img {
+      float: right;
+      width: 100px;
+    }
+    p {
+      float: left;
+      font-size: 16px;
+      span {
+        color: $bat-color-terracotta;
+      }
+    }
+  }
+
+  .reservation {
+    margin: 24px 0;
+    border-top: 1px solid $bat-color-grey-light;
+    border-bottom: 1px solid $bat-color-grey-light;
+    padding: 12px 0;
+    strong {
+      font-weight: 500;
+    }
+    table {
+      tr {
+        td {
+          font-size: 18px;
+        }
+        td:first-child {
+          width: 18%;
+          text-align: right;
+          font-weight: 200;
+          color: $bat-color-graphite-light;
+        }
+        td:last-child {
+          padding-left: 8px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .sig {
+    margin: 24px 0;
+    h2 {
+      font-size: 18px;
+      margin: 24px 0 24px;
+      font-weight: 500;
+    }
+  }
+}
 .mod-content {
   @extend .clearfix;
   width: 100%;
@@ -731,8 +807,10 @@ table.palette {
 
 @media only screen and (min-width: 580px) {
 
+
   .mod-roundup-item {
     //&:not(:first-child) {
+
       border-top: 2px dotted $bat-color-pea-soup-lighter;
       padding-top: 12px;
     //}
