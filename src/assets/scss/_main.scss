@@ -354,6 +354,10 @@ h1.selects, .selects {color: $bat-color-turtle-dove;margin:0;}
   background: #FDBC00;
 }
 
+.theme-green-jade {
+	background: $lrf-green-jade;
+}
+
 // TEXT COLOUR THEMES
 
 .txtcolor-graphite-light {
@@ -373,6 +377,7 @@ h1.selects, .selects {color: $bat-color-turtle-dove;margin:0;}
 }
 
 // HELPERS
+
 
 // This is the outside white border. It completely falls out of the normal flow of things (sorry about that)
 td.super-border-right, .super-border-right {

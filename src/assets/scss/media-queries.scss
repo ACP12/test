@@ -126,7 +126,8 @@ table[class="body"] table.mod-footer td.sub-column {
     height: 16px !important;
   }
 
-  table[class="body"] .mod-banner-beta-td, table[class="body"] img.mod-banner-beta-img {
+  table[class="body"] .mod-banner-beta-td, table[class="body"] img.mod-banner-beta-img
+	{
     width: 94% !important;
     height: auto !important;
   }
@@ -163,5 +164,13 @@ table[class="body"] table.mod-footer td.sub-column {
 	}
 	
 	table[class="body"] .columns td.six.review-stars-sm-td { width: 42% !important; }
+	
+	table[class="body"] .mob-auto-height {
+	height: auto !important;
+}
+	table[class="body"] .lrf-banner, table[class="body"] .lrf-header {
+		width: 94% !important;
+		margin: 0 3%;
+	}
 
 }
