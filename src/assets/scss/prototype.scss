@@ -156,7 +156,7 @@ $radius:        3px;
 
 // themes
 .theme-grey {
-  margin: 48px auto 24px;
+  margin: 0;
   background: #f7f7f7;
 }
 // PAGES
@@ -165,7 +165,7 @@ $radius:        3px;
 .page-styles,
 .page-modules {
 
-  margin: 48px auto 24px;
+  margin: 0;
 
 
   h5 {
@@ -181,7 +181,7 @@ $radius:        3px;
 .mod-featured-event {
   @extend .clearfix;
   padding: 0;
-  margin: 0 0 12px;
+  margin: 0 12px 12px;
 
 }
 
@@ -191,6 +191,7 @@ $radius:        3px;
   padding: 16px;
   border-radius: 4px;
   background: $bat-color-white;
+  width: 100%;
   p {
     color: $bat-color-graphite-light;
     font-weight: 200;
@@ -805,8 +806,22 @@ table.palette {
   }
 }
 
+
 @media only screen and (min-width: 580px) {
 
+
+  .page-index,
+  .page-styles,
+  .page-modules,
+  .theme-grey {
+
+    margin: 48px auto 24px;
+
+  }
+
+  .mod-featured-event {
+    margin: 0;
+  }
 
   .mod-roundup-item {
     //&:not(:first-child) {
