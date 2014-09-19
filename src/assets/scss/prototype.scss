@@ -798,6 +798,36 @@ table.palette {
   }
 }
 
+.mod-navbar-lrf {
+  table {
+    margin: 12px 0 0;
+    padding: 0;
+    width: 100%;
+    td {
+      width: 20%;
+    }
+  }
+
+  .btn {
+    font-size: 16px;
+    font-weight: 400;
+    background-color: $lrf-green-jade;
+    margin: 0 3px;
+    &.u10 {
+       background-color: $lrf-pink;
+     }
+    &.u20 {
+      background-color: $lrf-orange;
+    }
+    &.u30 {
+      background-color: $lrf-green-grass;
+    }
+    &.u40 {
+      background-color: $lrf-purple;
+    }
+  }
+}
+
 
 .star-rating {
   .stars {
