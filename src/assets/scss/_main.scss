@@ -296,6 +296,11 @@ h1.selects, .selects {color: $bat-color-turtle-dove;margin:0;}
 .view-all {color: $bat-color-pea-soup-dark;margin: 0; text-align: center;line-height: 1;}
 .view-all a, {color: $bat-color-pea-soup-dark; line-height: 1;}
 
+// LRF ROUNDUP
+
+table.lrf-button td{border: 1px solid #ffffff;}
+table.lrf-button{border-radius: 6px;}
+.five-up td.lrf-button-td {padding: 5px; margin: 5px;}
 
 // THEMES
 .theme-french {
@@ -357,6 +362,13 @@ h1.selects, .selects {color: $bat-color-turtle-dove;margin:0;}
 .theme-green-jade {
 	background: $lrf-green-jade;
 }
+
+.theme-lrf-pink, table.theme-lrf-pink td {background: #eb3992;}
+.theme-lrf-orange, table.theme-lrf-orange td {     background: #f0a550;}
+.theme-lrf-green-grass, table.theme-lrf-green-grass td { background: #25914f;}
+.theme-lrf-purple, table.theme-lrf-purple td {      background: #443289;}
+.theme-lrf-green-jade, table.theme-lrf-jade td {  background: #009b9d;}
+
 
 // TEXT COLOUR THEMES
 

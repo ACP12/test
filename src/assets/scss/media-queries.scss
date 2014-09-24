@@ -168,9 +168,15 @@ table[class="body"] table.mod-footer td.sub-column {
 	table[class="body"] .mob-auto-height {
 	height: auto !important;
 }
-	table[class="body"] .lrf-banner, table[class="body"] .lrf-header {
+	table[class="body"] .lrf-banner, table[class="body"] .lrf-header, table[class="body"] .full-width-banner {
 		width: 94% !important;
 		margin: 0 3%;
 	}
+	
+	table[class="body"] .lrf-buttons .five-up .lrf-button-td{padding:0 !important;margin:0 !important;}
+	
+	  table[class="container"] .block-grid td {
+    width: 100% !important;
+  }
 
 }
