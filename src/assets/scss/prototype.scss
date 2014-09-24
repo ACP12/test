@@ -17,6 +17,12 @@ $radius:        3px;
   width: ( $cols * ( $col-width + $gutter-width ) ) - $gutter-width;
 }
 
+table.container,
+center {
+  width: 100%;
+  min-width: 0;
+}
+
 // Utils
 // -----------------
 
@@ -187,12 +193,15 @@ $radius:        3px;
 
 // MODULES
 // -----------------------------------------------------------------------
-.mod-body-predine {
-  padding: 16px;
+.mod-body-comm {
+
+  padding: 0;
   border-radius: 4px;
   background: $bat-color-white;
   width: 100%;
+
   p {
+    //padding: 12px 16px 0;
     color: $bat-color-graphite-light;
     font-weight: 200;
     font-size: 18px;
@@ -210,7 +219,8 @@ $radius:        3px;
 
   .head {
     @extend .clearfix;
-    margin-bottom: 36px;
+    //margin-bottom: 24px;
+    padding: 16px;
 
     img {
       float: right;
@@ -223,6 +233,9 @@ $radius:        3px;
         color: $bat-color-terracotta;
       }
     }
+  }
+  .msg {
+    padding: 16px;
   }
 
   .reservation {
@@ -239,7 +252,7 @@ $radius:        3px;
           font-size: 18px;
         }
         td:first-child {
-          width: 18%;
+          width: 27%;
           text-align: right;
           font-weight: 200;
           color: $bat-color-graphite-light;
@@ -251,13 +264,74 @@ $radius:        3px;
       }
     }
   }
-  .sig {
-    margin: 24px 0;
-    h2 {
-      font-size: 18px;
-      margin: 24px 0 24px;
-      font-weight: 500;
+  .opts {
+    @extend .clearfix;
+    //margin: 24px 0 12px;
+    padding: 16px 0;
+    //border-bottom: 1px dashed $bat-color-turtle-dove-lighter;
+    border-top: 1px dashed $bat-color-turtle-dove-lighter;
+    h3 {
+      //color: $bat-color-french-blue;
+      font-size: 28px;
+      margin: 0;
+      text-align: center;
+      line-height: 1.25;
+      //text-transform: uppercase;
     }
+  }
+
+  .review-opts {
+    padding: 0;
+    list-style: none;
+    margin: 16px 0;
+
+    li {
+      list-style: none;
+      margin:12px;
+
+      a {
+        display: inline-block;
+        padding: 8px;
+        font-size: 20px;
+
+        color: $bat-color-graphite-light;
+        border: 3px solid $bat-color-french-blue-superlight;
+        border-radius: 8px;
+        img {
+          display: inline-block;
+          margin-right: 12px;
+          width: 10%;
+        }
+        span {
+          display: inline-block;
+          //width: 100%;
+          padding-top: 3px;
+        }
+      }
+    }
+  }
+  .sig {
+    margin: 0 0;
+    background-color: $bat-color-cerulean;
+    border-radius: 0 0 $base-border-radius $base-border-radius;
+    padding: 16px;
+    p {
+      color: $bat-color-white;
+      margin: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 0px 0 32px;
+      font-weight: 500;
+      padding: 0 ;
+      color: $bat-color-white;
+    }
+    p.noreply {
+      font-style: italic;
+      text-align: center;
+      font-size: 12px;
+    }
+
   }
 }
 .mod-content {
@@ -631,7 +705,6 @@ table.palette {
       }
     }
   }
-
 }
 
 .mod-viewall {
@@ -666,10 +739,7 @@ table.palette {
     &:hover {
       background: darken($bat-color-pea-soup-lighter, 5%);
     }
-
   }
-
-
 }
 
 .mod-roundup-item {
@@ -787,7 +857,6 @@ table.palette {
         }
       }
     }
-
   }
 }
 
@@ -838,6 +907,56 @@ table.palette {
 
 
 @media only screen and (min-width: 580px) {
+
+  table.container,
+  center {
+    width: 580px;
+    min-width: 580px;
+    margin: 0 auto;
+  }
+  .reservation table {
+    tr {
+      td:first-child {
+        width: 18%;
+      }
+    }
+  }
+
+  .mod-body-comm {
+
+    margin: 12px auto;
+    .review-opts {
+      padding: 0;
+      list-style: none;
+      margin: 0 32px;
+
+      li {
+        float: left;
+        width: 33.333%;
+        list-style: none;
+        text-align: center;
+        margin: 16px 0;
+
+        a {
+          display: inline-block;
+          margin: 0 6px;
+          text-align: center;
+          color: $bat-color-graphite;
+          img {
+            display: inline-block;
+            margin-right: 0;
+            float: none;
+            width: 60%;
+          }
+          span {
+            display: inline-block;
+            width: 100%;
+            padding-top: 0;
+          }
+        }
+      }
+    }
+  }
 
 
   .page-index,
