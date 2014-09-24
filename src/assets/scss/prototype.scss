@@ -266,17 +266,13 @@ center {
   }
   .opts {
     @extend .clearfix;
-    //margin: 24px 0 12px;
     padding: 16px 0;
-    //border-bottom: 1px dashed $bat-color-turtle-dove-lighter;
     border-top: 1px dashed $bat-color-turtle-dove-lighter;
     h3 {
-      //color: $bat-color-french-blue;
       font-size: 28px;
       margin: 0;
       text-align: center;
       line-height: 1.25;
-      //text-transform: uppercase;
     }
   }
 
