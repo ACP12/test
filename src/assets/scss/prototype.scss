@@ -227,22 +227,22 @@ center {
       width: 100px;
     }
     p {
-      float: left;
+      float: right;
       font-size: 16px;
       span {
         color: $bat-color-terracotta;
       }
     }
   }
-  .msg {
+  .msg, .noreply {
     padding: 16px;
   }
 
   .reservation {
-    margin: 24px 0;
+    margin: 0 0;
     border-top: 1px solid $bat-color-grey-light;
     border-bottom: 1px solid $bat-color-grey-light;
-    padding: 12px 0;
+    padding: 12px 16px;
     strong {
       font-weight: 500;
     }
@@ -269,10 +269,12 @@ center {
     padding: 16px 0;
     border-top: 1px dashed $bat-color-turtle-dove-lighter;
     h3 {
+      color: $bat-color-graphite-light;
       font-size: 28px;
-      margin: 0;
+      font-weight: 500;
+      margin: 0 48px;
       text-align: center;
-      line-height: 1.25;
+      line-height: 1.1;
     }
   }
 
@@ -293,6 +295,10 @@ center {
         color: $bat-color-graphite-light;
         border: 3px solid $bat-color-french-blue-superlight;
         border-radius: 8px;
+        transition: all .3s ease-out;
+        &:hover {
+          border-color: $bat-color-french-blue;
+        }
         img {
           display: inline-block;
           margin-right: 12px;
@@ -308,17 +314,24 @@ center {
   }
   .sig {
     margin: 0 0;
-    background-color: $bat-color-cerulean;
+    background-color: $bat-color-graphite;
     border-radius: 0 0 $base-border-radius $base-border-radius;
-    padding: 16px;
+    padding: 12px 16px 24px;
+    .logo {
+      @extend .clearfix;
+      margin: 0 0 0;
+      width: 160px;
+    }
     p {
+      font-size: 14px;
       color: $bat-color-white;
       margin: 0;
+      //text-align: center;
     }
     h3 {
-      font-size: 18px;
+      font-size: 24px;
       margin: 0px 0 32px;
-      font-weight: 500;
+      font-weight: 200;
       padding: 0 ;
       color: $bat-color-white;
     }
@@ -326,6 +339,7 @@ center {
       font-style: italic;
       text-align: center;
       font-size: 12px;
+      clear: both;
     }
 
   }

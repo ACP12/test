@@ -206,6 +206,11 @@ module.exports = function (grunt) {
                 tasks: 'sass'
             },
 
+            imgs: {
+                files: 'src/assets/imgs/*.{png,svg,jpg,gif}',
+                tasks: 'imagemin'
+            },
+
             template: {
                 files: 'src/**/*.hbs',
                 tasks: 'assemble'
