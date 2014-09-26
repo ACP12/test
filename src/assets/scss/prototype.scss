@@ -195,16 +195,23 @@ center {
 // -----------------------------------------------------------------------
 .mod-body-comm {
 
-  padding: 0;
   border-radius: 4px;
   background: $bat-color-white;
+  padding: 0;
   width: 100%;
 
+  .sep {
+    height: 1px;
+    margin: 0 16px;
+    border-top: 1px dotted $bat-color-graphite;
+  }
+
   p {
-    //padding: 12px 16px 0;
+
     color: $bat-color-graphite-light;
     font-weight: 200;
     font-size: 18px;
+
     &.lead {
       font-size: 28px;
       font-weight: 500;
@@ -219,7 +226,6 @@ center {
 
   .head {
     @extend .clearfix;
-    //margin-bottom: 24px;
     padding: 16px;
 
     img {
@@ -240,8 +246,8 @@ center {
 
   .reservation {
     margin: 0 0;
-    border-top: 1px solid $bat-color-grey-light;
-    border-bottom: 1px solid $bat-color-grey-light;
+    border-top: 1px dotted $bat-color-graphite-lighter;
+    border-bottom: 1px dotted $bat-color-graphite-lighter;
     padding: 12px 16px;
     strong {
       font-weight: 500;
@@ -267,7 +273,7 @@ center {
   .opts {
     @extend .clearfix;
     padding: 16px 0;
-    border-top: 1px dashed $bat-color-turtle-dove-lighter;
+    //border-top: 1px dotted $bat-color-terracotta-light;
     h3 {
       color: $bat-color-graphite-light;
       font-size: 28px;
@@ -924,17 +930,19 @@ table.palette {
     min-width: 580px;
     margin: 0 auto;
   }
-  .reservation table {
-    tr {
-      td:first-child {
-        width: 18%;
-      }
-    }
-  }
+
 
   .mod-body-comm {
 
     margin: 12px auto;
+
+    .reservation table {
+      tr {
+        td:first-child {
+          width: 20%;
+        }
+      }
+    }
     .review-opts {
       padding: 0;
       list-style: none;
