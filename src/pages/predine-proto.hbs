@@ -15,9 +15,12 @@ layout:     layout-comms
    </div>
 
    <div class="msg">
-       <p class="lead">Jeff</p>
+
+       <p class="lead">{{{customer-name}}}</p>
+
        <p>Just a quick reminder that you've got a great <strong>Bookatable</strong> deal reserved for this Monday at <a
                href="#Restaurant-Page">The Waldorf Hilton</a>. Here are the details:</p>
+
    </div>
 
   <div class="sep"></div>
@@ -29,7 +32,7 @@ layout:     layout-comms
             <tbody>
                 <tr>
                     <td>Date:</td>
-                    <td>Monday, 22 August 2014</td>
+                    <td>{{{booking-date}}}</td>
                 </tr>
                 <tr>
                     <td>Time:</td>
@@ -62,13 +65,20 @@ layout:     layout-comms
             unmonitored. </p>
     </div>
 
-    <!-- Signature -->
-    <div class="sig">
-        <p>Many thanks from</p>
-        <!--<h3>The Bookatable Team</h3>-->
-        <div class="logo"><img src="assets/imgs/logo-white-@2x.png" title="The Bookatable Team"></div>
-        <!--<p class="noreply">Please don't reply to this email as the address is unmonitored.</p>-->
+    <div class="mail-footer">
+
+        <!-- Signature -->
+        <div class="sig">
+            <p>Many thanks from</p>
+            <div class="logo"><img src="assets/imgs/logo-white-@2x.png" title="The Bookatable Team"></div>
+        </div>
+
+        <!-- Social -->
+        <div class="links-social">
+            <a href="#facebook" class="social"><img src="assets/imgs/social-facebook.png"></a>
+            <a href="#facebook" class="social"><img src="assets/imgs/social-twitter.png"></a>
+        </div>
+
     </div>
-    <!-- /Signature -->
 </div>
 
