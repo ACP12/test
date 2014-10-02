@@ -1,0 +1,181 @@
+$gutter-width:  20px;
+$col-width:     30px;
+$col-total:     12;
+$btn-height:    48px;
+$radius:        4px;
+
+@mixin colWidth($cols) {
+  width: ( $cols * ( $col-width + $gutter-width ) ) - $gutter-width;
+}
+
+@media only screen and (min-width: 580px) {
+
+  table.container,
+  center {
+    width: 580px;
+    min-width: 580px;
+    margin: 0 auto;
+  }
+
+
+  .mod-body-comm {
+
+    margin: 12px auto;
+
+    .reservation table {
+      tr {
+        td:first-child {
+          width: 20%;
+        }
+      }
+    }
+    .review-opts {
+      padding: 0;
+      list-style: none;
+      margin: 0 32px;
+
+      li {
+        float: left;
+        width: 33.333%;
+        list-style: none;
+        text-align: center;
+        margin: 16px 0;
+
+        a {
+          display: inline-block;
+          margin: 0 6px;
+          text-align: center;
+          color: $bat-color-graphite;
+          img {
+            display: inline-block;
+            margin-right: 0;
+            float: none;
+            width: 60%;
+          }
+          span {
+            display: inline-block;
+            width: 100%;
+            padding-top: 0;
+          }
+        }
+      }
+    }
+  }
+
+
+  .page-index,
+  .page-styles,
+  .page-modules,
+  .theme-grey {
+
+    margin: 48px auto 24px;
+
+  }
+
+  .mod-featured-event {
+    margin: 0;
+  }
+
+  .mod-roundup-item {
+    //&:not(:first-child) {
+
+    border-top: 2px dotted $bat-color-pea-soup-lighter;
+    padding-top: 12px;
+    //}
+    h2 {
+      margin: 0 0 0;
+    }
+
+    .mod-roundup-item-body {
+
+      .copy-wrap {
+        padding: 0;
+      }
+
+    }
+  }
+  .mod-roundup-header {
+
+    h1 {
+
+      font-size: 36px;
+      padding: 0;
+
+      > img {
+        display: inline-block;
+        height: 24px;
+        width: auto;
+        padding: 6px 8px 0 0;
+      }
+      a {
+        display: inline-block;
+        text-align: right;
+        font-size: 24px;
+        text-transform: uppercase;
+        float: right;
+        padding: 8px 0 0;
+        color: $bat-color-grey;
+
+
+
+        img {
+          display: inline-block;
+          float: right;
+          height: 24px;
+          margin: 0 0 0 8px;
+        }
+      }
+    }
+  }
+  .mod-viewall {
+    margin: 0;
+    text-align: center;
+  }
+
+  // Grid
+  .row {
+    max-width: 580px;
+  }
+
+  .col {
+    float: left;
+    margin: 0 0 0 $gutter-width;
+    &:first-child,
+    &.col-12 {
+      margin-left: 0;
+    }
+  }
+
+  .col-12 {
+    @include colWidth(12);
+  }
+
+  .col-9 {
+    @include colWidth(9);
+  }
+
+  .col-8 {
+    @include colWidth(8);
+  }
+
+  .col-7 {
+    @include colWidth(7);
+  }
+
+  .col-6 {
+    @include colWidth(6);
+  }
+
+  .col-5 {
+    @include colWidth(5);
+  }
+
+  .col-4 {
+    @include colWidth(4);
+  }
+
+  .col-3 {
+    @include colWidth(3);
+  }
+
+}

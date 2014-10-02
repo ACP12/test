@@ -5,62 +5,51 @@ region:     London
 culture:    en-GB
 layout:     bookatable-default
 ---
-
+<link rel="stylesheet" href="assets/css/prototype.css">
 <!-- divider -->
 {{> divider }}
 
 <!-- STAR DEAL STRAPLINE -->
-<!--{{> stardeal-strapline }}-->
+{{> stardeal-strapline }}
 <!-- STAR DEAL STRAPLINE -->
 
 <!-- divider -->
 {{> divider }}
 
 <!-- STAR DEAL HEADER TEXT -->
-<table border="0" cellpadding="0" cellspacing="0" class="row theme-cerulean">
-    <tr>
-        <td class="wrapper">
-          {{> stardeal-header-text}}
-        </td>
-        <td class="wrapper last">
-        {{> stardeal-header-button}}
-        </td>
-    </tr>
-</table>
-<!-- STAR DEAL HEADER TEXT -->
-
-<!-- STAR DEAL HERO -->
 <table border="0" cellpadding="0" cellspacing="0" class="row">
     <tr>
-        <td class="wrapper last">
-          {{> stardeal-hero}}
+        <td class="wrapper">
+          {{> mod-deal-hero-header-02 }}
         </td>
     </tr>
+
 </table>
 <!-- STAR DEAL HERO -->
 
-<!-- divider -->
-{{> divider }}
+
 
 <!-- STAR DEAL CONTENT -->
 <table border="0" cellpadding="0" cellspacing="0" class="row">
     <tr>
         <td class="wrapper last">
-          <div>
-              <div class="rate-locate">
 
-                  <a class="stars" href="#restaurant-reviews">
-                      <img title="Rated 3.8 out of 5 by diners" src="assets/imgs/stars-3.5.png"> 177 Reviews
-                  </a>
-                  <a  class="loc" href="#restaurant-location">Location
-                      <img src="assets/imgs/icon-marker-light-blue.png"></a>
+              <!--<div class="rate-locate">-->
+
+                  <!--<a class="stars" href="#restaurant-reviews">-->
+                      <!--<img title="Rated 3.8 out of 5 by diners" src="assets/imgs/stars-3.5.png"> 177 Reviews-->
+                  <!--</a>-->
+                  <!--<a  class="loc" href="#restaurant-location">Location-->
+                      <!--<img src="assets/imgs/icon-marker-light-blue.png"></a>-->
 
 
-              </div>
-              <p>Inspired by the fine dining establishments of Paris and Monte Carlo,
+              <!--</div>-->
+              <div class="desc-short">
+                <p>Inspired by the fine dining establishments of Paris and Monte Carlo,
                   the bright and decadent Avalanche restaurant serves authentic Italian cuisine in sleek surroundings
                   . <a href="#Restaurant-listing">See full details</a></p>
-          </div>
+              </div>
+
         </td>
     </tr>
 </table>

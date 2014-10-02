@@ -1,0 +1,300 @@
+@import "../variables";
+// Extend variables
+// ----------------
+
+$gutter-width:  20px;
+$col-width:     30px;
+$col-total:     12;
+$btn-height:    48px;
+$radius:        4px;
+
+// Style guide
+// -----------------------------------------------------------------------
+
+.page-styles {
+  section.style {
+    margin: 24px 0;
+    padding: 0 0 24px;
+    //border-bottom: 1px dotted $bat-color-grey;
+
+    h1 > a,
+    h2 > a,
+    h3 > a,
+    h4 > a {
+      color: $bat-color-terracotta !important;
+      transition: all .3s ease-out;
+      &:hover {
+        color: $bat-color-terracotta-dark !important;
+      }
+    }
+    hr {
+      margin:0 0 12px;
+
+    }
+    h1 + hr {
+      //margin: 0 0 48px;
+    }
+
+    code {
+      display: inline-block;
+      border-radius: 3px;
+      background: $bat-color-grey-lighter;
+      color: $bat-color-french-blue;
+      padding: 0 5px;
+    }
+
+    blockquote {
+      display: block;
+      margin: 24px 12px;
+      background: lighten($bat-color-pillar-box-lighter, 10%);
+      padding: 7px 12px;
+      border-radius: $radius;
+
+      p {
+        margin: 0;
+        font-family: $base-font-family;
+        color: $bat-color-pillar-box-dark;
+      }
+    }
+    p {
+      color: $bat-color-grey-darker;
+    }
+
+    p.lead {
+      font-size: 18px;
+    }
+
+  }
+
+
+
+  h1:first-child {
+    margin: 12px 0 18px;
+    //color: red;
+  }
+
+
+
+  section.serif {
+    margin-top:24px;
+    $serif-adjust: 2px;
+    h2, h3, h4, p {
+      font-family: $secondary-font-family;
+    }
+    h2 {
+      font-size: $font-xl + $serif-adjust;
+    }
+    h3 {
+      font-size: $font-lg + $serif-adjust;
+    }
+    h4, p {
+      font-size: $font-med + $serif-adjust;
+    }
+
+  }
+}
+
+table.palette {
+  width: 100%;
+
+  th {
+    font-weight: normal;
+    font-size: 8px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 10%;
+  }
+
+  tr.palette-dark {
+
+    td {
+
+      height: 12px;
+      background: $bat-color-grey-lighter;
+
+      &:nth-child(1) {
+        background: $bat-color-graphite-dark;
+      }
+      &:nth-child(2) {
+        background: $bat-color-cerulean-dark;
+      }
+      &:nth-child(3) {
+        background: $bat-color-french-blue-dark;
+      }
+      &:nth-child(4) {
+        background: $bat-color-pea-soup-dark;
+      }
+      &:nth-child(5) {
+        background: $bat-color-gold-dark;
+      }
+      &:nth-child(6) {
+        background: $bat-color-terracotta-dark;
+      }
+      &:nth-child(7) {
+        background: $bat-color-pillar-box-dark;
+      }
+      &:nth-child(8) {
+        background: $bat-color-vellum-dark;
+      }
+      &:nth-child(9) {
+        background: $bat-color-turtle-dove-dark;
+      }
+      &:nth-child(10) {
+        background: $bat-color-grey-darker;
+      }
+    }
+  }
+
+  tr.palette-med {
+
+    td {
+
+      height: 24px;
+      background: $bat-color-grey-lighter;
+
+      &:nth-child(1) {
+        background: $bat-color-graphite;
+      }
+      &:nth-child(2) {
+        background: $bat-color-cerulean;
+      }
+      &:nth-child(3) {
+        background: $bat-color-french-blue;
+      }
+      &:nth-child(4) {
+        background: $bat-color-pea-soup;
+      }
+      &:nth-child(5) {
+        background: $bat-color-gold;
+      }
+      &:nth-child(6) {
+        background: $bat-color-terracotta;
+      }
+      &:nth-child(7) {
+        background: $bat-color-pillar-box;
+      }
+      &:nth-child(8) {
+        background: $bat-color-vellum;
+      }
+      &:nth-child(9) {
+        background: $bat-color-turtle-dove;
+      }
+      &:nth-child(10) {
+        background: $bat-color-grey-dark;
+      }
+    }
+  }
+
+  tr.palette-light {
+    td {
+      height: 36px;
+      background: $bat-color-grey-lighter;
+
+      &:nth-child(1) {
+        background: $bat-color-graphite-light;
+      }
+      &:nth-child(2) {
+        background: $bat-color-cerulean-light;
+      }
+      &:nth-child(3) {
+        background: $bat-color-french-blue-light;
+      }
+      &:nth-child(4) {
+        background: $bat-color-pea-soup-light;
+      }
+      &:nth-child(5) {
+        background: $bat-color-gold-light;
+      }
+      &:nth-child(6) {
+        background: $bat-color-terracotta-light;
+      }
+      &:nth-child(7) {
+        background: $bat-color-pillar-box-light;
+      }
+      &:nth-child(8) {
+        background: $bat-color-vellum-light;
+      }
+      &:nth-child(9) {
+        background: $bat-color-turtle-dove-light;
+      }
+      &:nth-child(10) {
+        background: $bat-color-grey-light;
+      }
+    }
+  }
+
+  tr.palette-lighter {
+    td {
+      height: 48px;
+      background: $bat-color-grey-lighter;
+
+      &:nth-child(1) {
+        background: $bat-color-graphite-lighter;
+      }
+      &:nth-child(2) {
+        background: $bat-color-cerulean-lighter;
+      }
+      &:nth-child(3) {
+        background: $bat-color-french-blue-lighter;
+      }
+      &:nth-child(4) {
+        background: $bat-color-pea-soup-lighter;
+      }
+      &:nth-child(5) {
+        background: $bat-color-gold-lighter;
+      }
+      &:nth-child(6) {
+        background: $bat-color-terracotta-lighter;
+      }
+      &:nth-child(7) {
+        background: $bat-color-pillar-box-lighter;
+      }
+      &:nth-child(8) {
+        background: $bat-color-vellum-lighter;
+      }
+      &:nth-child(9) {
+        background: $bat-color-turtle-dove-lighter;
+      }
+      &:nth-child(10) {
+        background: $bat-color-grey-lighter;
+      }
+    }
+  }
+  tr.palette-superlight {
+    td {
+      height: 64px;
+
+      &:nth-child(1) {
+        background: $bat-color-graphite-superlight;
+      }
+      &:nth-child(2) {
+        background: $bat-color-cerulean-superlight;
+      }
+      &:nth-child(3) {
+        background: $bat-color-french-blue-superlight;
+      }
+      &:nth-child(4) {
+        background: $bat-color-pea-soup-superlight;
+      }
+      &:nth-child(5) {
+        background: $bat-color-gold-superlight;
+      }
+      &:nth-child(6) {
+        background: $bat-color-terracotta-superlight;
+      }
+      &:nth-child(7) {
+        background: $bat-color-pillar-box-superlight;
+      }
+      &:nth-child(8) {
+        background: $bat-color-vellum-superlight;
+      }
+      &:nth-child(9) {
+        background: $bat-color-turtle-dove-superlight;
+      }
+      &:nth-child(10) {
+        background: $bat-color-white;
+      }
+    }
+  }
+
+}

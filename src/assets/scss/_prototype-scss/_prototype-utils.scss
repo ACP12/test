@@ -1,0 +1,171 @@
+// Utils
+// -----------------
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Add padding to copy container
+.copy-wrap {
+  padding: $font-xs/2 $font-xs;
+  @extend .clearfix;
+}
+
+// Add padding to image
+.img-wrap {
+  padding: $font-xs;
+  @extend .clearfix;
+}
+
+// Wrap content in hyperlink
+.link-wrap {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  cursor: pointer;
+  @extend .clearfix;
+}
+
+// Buttons
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  border-radius: $radius;
+  vertical-align: middle;
+  text-align: center;
+  background: $bat-color-grey;
+  color: $bat-color-white;
+  font-size: $font-lg;
+  text-transform: uppercase;
+  line-height: $btn-height;
+  cursor: pointer;
+  transition: all .3s ease-out;
+
+  &:hover {
+    background: darken($bat-color-grey, 5%);
+    color: $bat-color-white !important;
+  }
+
+  // Fill containing element
+  &.btn-block {
+    border-radius: 0;
+    width: 100%;
+  }
+
+  // Book now etc.
+  &.btn-primary {
+    background: $bat-color-pillar-box;
+    &:hover {
+      background: darken($bat-color-pillar-box, 5%);
+      color: $bat-color-white;
+    }
+  }
+}
+
+
+table.container,
+center {
+  width: 100%;
+  min-width: 0;
+}
+
+
+
+// Page index
+// --------------
+.list-group {
+
+  margin: 24px 0;
+  border: 1px solid $bat-color-grey-light;
+  border-radius: $radius;
+
+  .list-group-item {
+    display: block;
+    padding: 12px 12px 6px;
+    border-bottom: 1px solid $bat-color-grey-light;
+    transition: background-color .3s ease-out;
+    &:last-child {
+      border: 0;
+    }
+    &:hover {
+      background: $bat-color-french-blue-superlight;
+    }
+  }
+
+  .list-group-item-heading {
+    font-size: 21px;
+    font-weight: bold;
+    color: $bat-color-grey-darker;
+  }
+
+  .list-group-item-text {
+    color: $bat-color-grey-dark;
+  }
+}
+
+
+
+
+// Grid utilities
+// -----------------------------------------------------------------------
+
+//.row {
+//
+//  width: 100%;
+//  margin: $font-med auto $font-med;
+//  padding: 0;
+//
+//}
+
+.col {
+  float: left;
+  margin: 0 auto;
+}
+
+.col-12,
+.col-9,
+.col-8,
+.col-7,
+.col-6,
+.col-5,
+.col-4,
+.col-3 {
+  width: 100%;
+}
+
+.show-grid {
+  .col {
+    background: $bat-color-grey-lighter;
+  }
+}
+
+// themes
+.theme-grey {
+  margin: 0;
+  background: #E6E6E6;
+}
+// PAGES
+// -----------------------------------------------------------------------
+.page-index,
+.page-styles,
+.page-modules {
+
+  margin: 0;
+
+
+  h5 {
+    font-size: 18px;
+    color: $bat-color-grey;
+    span {
+      display: inline-block;
+      float: right;
+    }
+  }
+
+}
