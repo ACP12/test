@@ -503,53 +503,65 @@ $radius:        4px;
 .mod-deal-hero-header-light {
   background: $bat-color-cerulean;
   h2 {
-    color: $bat-color-french-blue-light;
+    color: lighten($bat-color-french-blue-light, 10%);
     font-weight: 400;
-    margin: 0 0 8px;
+    margin: 8px 0 0;
   }
   p {
     line-height: 1.2;
   }
 }
+
 .navbar {
+
   @extend .clearfix;
   background: $bat-color-turtle-dove;
+  //border-bottom: 1px solid #fff; //$bat-color-cerulean-dark;
 
   .nav {
     height: 48px;
-    width: 50%;
+    width: 33.333333%;
     float: right;
+
     .btn {
       font-weight: 200;
       background: $bat-color-french-blue-light;
-
+      font-size: 18px;
+      &.menu {
+        background: $bat-color-french-blue;
+      }
     }
     .btn-primary {
       background: $bat-color-pillar-box;
+      border: 0;
     }
-  }
-}
-
-.rate-locate {
-  @extend .clearfix;
-  .stars {
-    display: block;
-    float: left;
-    width: 200px;
   }
 }
 
 .desc-short {
-  background: $bat-color-turtle-dove-light;
+  border-top: 1px solid $bat-color-cerulean-dark;
+  background: $bat-color-cerulean;
   padding: 15px;
+
+  .rating {
+    @extend .clearfix;
+    a.stars {
+      display: block;
+
+      img {
+        width: 100px !important;
+        margin-right: 4px;
+      }
+    }
+  }
+
+
   p {
-    color: $bat-color-cerulean;
+    margin-top: 4px;
+    color: $bat-color-white;
+    font-weight: 200;
   }
 }
-
-
-
-
 
 // Redundant
 // ------------------------------------
