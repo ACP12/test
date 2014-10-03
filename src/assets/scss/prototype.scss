@@ -504,11 +504,12 @@ $radius:        4px;
   background: $bat-color-cerulean;
   h2 {
     color: lighten($bat-color-french-blue-light, 10%);
-    font-weight: 400;
-    margin: 8px 0 0;
+    font-weight: 200;
+    margin: 4px 0 0;
   }
   p {
     line-height: 1.2;
+    font-weight: 200;
   }
 }
 
@@ -522,26 +523,43 @@ $radius:        4px;
     height: 48px;
     width: 33.333333%;
     float: right;
-
+    border-bottom: 1px solid #fff;
+    //border-top: 1px solid #fff;
     .btn {
-      font-weight: 200;
+      font-weight: 400;
+      letter-spacing: 2px;
       background: $bat-color-french-blue-light;
-      font-size: 18px;
+      font-size: 14px;
       &.menu {
         background: $bat-color-french-blue;
+        &:hover {
+          background: darken($bat-color-french-blue, 10%);
+        }
+      }
+      &:hover {
+        background: darken($bat-color-french-blue-light, 10%);
       }
     }
     .btn-primary {
       background: $bat-color-pillar-box;
       border: 0;
+      &:hover {
+        background: darken($bat-color-pillar-box, 10%);
+      }
     }
   }
 }
 
 .desc-short {
-  border-top: 1px solid $bat-color-cerulean-dark;
+  border-top: 1px solid #fff; //$bat-color-cerulean-dark;
   background: $bat-color-cerulean;
   padding: 15px;
+  a {
+   color: lighten($bat-color-french-blue-light, 10%);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 
   .rating {
     @extend .clearfix;
@@ -562,19 +580,6 @@ $radius:        4px;
     font-weight: 200;
   }
 }
-
-// Redundant
-// ------------------------------------
-/*
-
-.star-rating {
-  .stars {
-    display: inline-block;
-    width: 25%;
-  }
-}
-
-*/
 
 
 
