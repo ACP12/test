@@ -24,8 +24,8 @@ module.exports = function (grunt) {
                     email: 'lbtest08@gmail.com'
                 },
                 yahoo: {
-                    name: 'Ben (Yahoo)',
-                    email: 'bwarren@btinternet.com'
+                    name: 'Yahoo',
+                    email: 'lbtest08@yahoo.co.uk'
                 },
                 default: {
                     name: 'Ben',
