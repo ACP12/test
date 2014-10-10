@@ -421,10 +421,21 @@ table.tertiary td {
 
 table.tertiary td a {
   color: $bat-color-white;
-	font-size: $font-lg;
+//	font-size: $font-lg;
 	line-height: 1;
 }
 
+table.quaternary td {
+  background: $bat-color-french-blue-light;
+  border-color: $bat-color-french-blue-light;
+  color: $bat-color-white;
+}
+
+table.quaternary td a {
+  color: $bat-color-white;
+//	font-size: $font-lg;
+	line-height: 1;
+}
 
 
 // HOVERS 

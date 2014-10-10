@@ -17,6 +17,9 @@
 - ~~Weird gap under review stars image (related to hero image gap?)~~
 - Images with a link (e.g. star deal hero image) become inverted on click.
 - All email text sometimes revert to the default serif as detailed here: (http://www.emailonacid.com/forum/viewthread/183/#788)
+- Large gaps on long tables in Outlook 07/10 
+see here: (https://www.emailonacid.com/blog/details/C13/horizontal_spacing_issues_in_outlook_2007_and_2010).
+possible fix: (http://www.emailonacid.com/blog/details/C13/background_colors_in_html_emails)
 
 ### Outlook.com
 - Retina images refuse to stay within their containing box on outlook.com when viewed in Internet Explorer if the height and width do not conform to the same ratio as the original image.
