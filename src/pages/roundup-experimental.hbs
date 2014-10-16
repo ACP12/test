@@ -3,30 +3,196 @@ title:      Roundup (Experimental Version)
 desc:       Weekly star deal round-up email
 region:     London
 culture:    en-GB
-layout:     bookatable-default
+layout:     bookatable-long
 ---
-<table class="row">
-  <tr>
-    <td class="wrapper last">
-			{{> roundup-header }}
-    </td>
-  </tr>
+<table class="body">
+	<tr>
+		<td class="center" align="center" valign="top">
+			<center>
+
+				<!-- HEADER BEGIN -->
+				<table border="0" cellpadding="0" cellspacing="0" class="container header">
+					<tr>
+						<td>
+							<table border="0" cellpadding="0" cellspacing="0" class="row">
+								<tr>
+									<!-- removed the normal last class and add super border to fix alignment -->
+									<td class="wrapper theme-graphite super-border-right">
+										{{> standard-header}}
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<!-- HEADER END -->
+
+				<!-- MAIN BEGIN -->
+				<table border="0" cellpadding="0" cellspacing="0" class="container main">
+					<tr>
+						<td class="super-border theme-white">
+							<table class="row">
+								<tr>
+									<td class="wrapper last">
+										{{> roundup-header }}
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<!-- MAIN END -->
+
+
+			</center>
+		</td>
+	</tr>
 </table>
 
-{{> roundup-module-short }}
+<table class="body">
+	<tr>
+		<td class="center" align="center" valign="top">
+			<center>
 
-{{> divider }}
+				<!-- MAIN 2 BEGIN -->
+				<table border="0" cellpadding="0" cellspacing="0" class="container main">
+					<tr>
+						<td class="super-border theme-white">
 
-{{> roundup-module-long }}
+							{{> roundup-module-experimental2 }}
 
-{{> divider }}
+							{{> roundup-module-experimental2 }}
 
-{{> roundup-module-long }}
+							{{> roundup-module-experimental2 }}
 
-{{> divider }}
+							{{> roundup-module-experimental2 }}
 
-{{> stardeal-banner-beta }}
+						</td>
+					</tr>
+				</table>
+				<!-- MAIN 2 END -->
 
-{{> divider }}
 
-{{> stardeal-pref }}
+			</center>
+		</td>
+	</tr>
+</table>
+
+<table class="body">
+	<tr>
+		<td class="center" align="center" valign="top">
+			<center>
+
+				<!-- MAIN 3 BEGIN -->
+				<table border="0" cellpadding="0" cellspacing="0" class="container main">
+					<tr>
+						<td class="super-border theme-white">
+
+							{{> roundup-module-experimental2 }}
+
+							{{> roundup-module-experimental3 }}
+
+							{{> roundup-module-experimental2 }}
+
+							{{> roundup-module-experimental2 }}
+
+						</td>
+					</tr>
+				</table>
+				<!-- MAIN 3 END -->
+
+
+			</center>
+		</td>
+	</tr>
+</table>
+
+<table class="body">
+	<tr>
+		<td class="center" align="center" valign="top">
+			<center>
+
+				<!-- LRF -->
+				<table border="0" cellpadding="0" cellspacing="0" class="container main">
+					<tr>
+						<td class="super-border theme-white">
+
+							{{> divider }}
+
+							<table class="row">
+								<tr>
+									<td class="wrapper last">
+										{{> full-width-header-lrf }}
+									</td>
+								</tr>
+							</table>
+
+							<table class="row lrf-buttons">
+								<tr>
+									<td class="wrapper last">
+										{{> lrf-buttons }}
+									</td>
+								</tr>
+							</table>
+
+							{{> divider }}
+							
+							<table class="row">
+								<tr>
+									<td class="wrapper last">
+										{{> stardeal-pref }}
+									</td>
+								</tr>
+							</table>
+							
+							{{> divider }}
+
+						</td>
+					</tr>
+				</table>
+				<!-- LRF -->
+				
+				
+
+				<!-- FOOTER BEGIN -->
+				<table border="0" cellpadding="0" cellspacing="0" class="container footer">
+					<tr>
+						<td>
+						
+						{{> divider-double }}
+						
+						
+							<table border="0" cellpadding="0" cellspacing="0" class="row">
+								<tr>
+									<td class="wrapper last center">
+
+										<center>
+											{{> footer-icons }}
+										</center>
+
+									</td>
+
+								</tr>
+							</table>
+
+							{{> divider-double }}
+
+							<table border="0" cellpadding="0" cellspacing="0" class="row">
+								<tr>
+									<td class="wrapper last">
+										{{> footer-text }}
+									</td>
+								</tr>
+							</table>
+
+						</td>
+					</tr>
+				</table>
+				<!-- FOOTER END -->
+
+
+			</center>
+		</td>
+	</tr>
+</table>
+
