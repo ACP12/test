@@ -1,14 +1,19 @@
-$gutter-width:  20px;
-$col-width:     30px;
-$col-total:     12;
-$btn-height:    48px;
-$radius:        4px;
+$gutter-width:        20px;
+$col-width:           30px;
+$col-total:           12;
+$btn-height:          48px;
+$radius:              3px;
+
+$viewport-width-sml:  320px;
+$viewport-width-med:  580px;
+$viewport-width-lg:   1024px;
+$viewport-width-xlg:  1200px;
 
 @mixin colWidth($cols) {
   width: ( $cols * ( $col-width + $gutter-width ) ) - $gutter-width;
 }
 
-@media only screen and (min-width: 580px) {
+@media only screen and (min-width: $viewport-width-med) {
 
   table.container,
   center {
@@ -17,10 +22,14 @@ $radius:        4px;
     margin: 0 auto;
   }
 
-
   .mod-body-comm {
 
     margin: 12px auto;
+    border-radius: $radius;
+
+    .mail-footer {
+      border-radius: 0 0 $radius $radius;
+    }
 
     .reservation table {
       tr {
@@ -29,6 +38,7 @@ $radius:        4px;
         }
       }
     }
+
     .review-opts {
       padding: 0;
       list-style: none;
@@ -42,11 +52,17 @@ $radius:        4px;
         margin: 16px 0;
 
         a {
+
+          position: relative;
           display: inline-block;
           margin: 0 6px;
           text-align: center;
           color: $bat-color-graphite;
+
           img {
+            //position: absolute;
+            //top: 50%;
+            //transform: translate(0, -50%);
             display: inline-block;
             margin-right: 0;
             float: none;
@@ -56,12 +72,12 @@ $radius:        4px;
             display: inline-block;
             width: 100%;
             padding-top: 0;
+
           }
         }
       }
     }
   }
-
 
   .page-index,
   .page-styles,
@@ -116,8 +132,6 @@ $radius:        4px;
         padding: 8px 0 0;
         color: $bat-color-grey;
 
-
-
         img {
           display: inline-block;
           float: right;
@@ -127,6 +141,7 @@ $radius:        4px;
       }
     }
   }
+
   .mod-viewall {
     margin: 0;
     text-align: center;

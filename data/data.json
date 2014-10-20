@@ -1,6 +1,26 @@
 {
 
-  "customer-name":            "Jeff",
-  "booking-date":             "Saturday, 22 June 2014"
+  "customer": {
+    "name":           "Dan Diner",
+    "email":          "ken-and-eddy@kennedy.com"
+  },
+
+  "restaurant": {
+    "name":           "The Waldorf Hilton",
+    "address":        "22 Aldwych, London WC2B 4DD",
+    "location-url":   "#view-restaurant-location",
+    "contact-url":    "#view-restaurant-contact-details"
+  },
+
+  "booking": {
+    "reference":      "0000-3456-01",
+    "day":            "Saturday",
+    "date":           "22 June 2014",
+    "time":           "7:30 pm",
+    "size":            "10 people",
+    "type":           "STAR DEAL - 3 courses & two glasses of wine",
+    "url":            "#view-restaurant-and-booking details",
+    "cancel":         "#cancel-a-booking"
+  }
 
 }

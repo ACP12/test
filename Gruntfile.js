@@ -197,24 +197,28 @@ module.exports = function (grunt) {
 
         watch: {
 
-            options: {
-                livereload: true
-            },
+          options: {
+            livereload: true
+          },
 
-            css: {
-                files: 'src/assets/scss/*.scss',
-                tasks: 'sass'
-            },
+          css: {
+            files: 'src/assets/scss/**/*.scss',
+            tasks: 'sass'
+          },
 
-            imgs: {
-                files: 'src/assets/imgs/*.{png,svg,jpg,gif}',
-                tasks: 'imagemin'
-            },
+          imgs: {
+            files: 'src/assets/imgs/*.{png,svg,jpg,gif}',
+            tasks: 'imagemin'
+          },
 
-            template: {
-                files: 'src/**/*.hbs',
-                tasks: 'assemble'
-            }
+          template: {
+            files: 'src/**/*.hbs',
+            tasks: 'assemble'
+          },
+          data: {
+            files: 'data/*.{json,yml}',
+            tasks: 'assemble'
+          }
 
         }
     });

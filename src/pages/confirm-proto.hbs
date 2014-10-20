@@ -1,0 +1,84 @@
+---
+title:      Confirmation (prototype)
+desc:       Booking confirmation email.
+region:     London
+culture:    en-GB
+layout:     layout-comms
+---
+
+
+<div class="mod-body-comm">
+
+   <div class="head">
+        <!--<a href="#bookatable.com"><img src="assets/imgs/logo-black.png"></a>-->
+       <p>Ref: {{{booking.reference}}}</p>
+   </div>
+
+   <div class="msg">
+
+       <p class="lead">{{{customer.name}}}</p>
+
+       <p>Thank you. Your reservation at <a href="{{{booking.url}}}">{{{ restaurant.name
+       }}}</a> is now confirmed. Please check the details below to make sure that everything is correct:</p>
+
+   </div>
+
+  <div class="sep"></div>
+
+   <!-- Summary -->
+   <div class="reservation">
+
+        <table>
+            <tbody>
+                <tr>
+                    <td>Date:</td>
+                    <td>{{{booking.day}}}, {{{booking.date}}}</td>
+                </tr>
+                <tr>
+                    <td>Time:</td>
+                    <td>{{{booking.time}}}</td>
+                </tr>
+                <tr>
+                    <td>For:</td>
+                    <td>{{{booking.size}}}</td>
+                </tr>
+                <tr>
+                    <td>Promotion:</td>
+                    <td>{{{booking.type}}}</td>
+                </tr>
+                <tr>
+                    <td>Location:</td>
+                    <td><a href="{{{restaurant.location-url}}}">{{{restaurant.name}}}, {{{restaurant.address}}}</a></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <!-- /Summary -->
+
+    <div class="sep"></div>
+
+    <div class="noreply">
+        <p>If you need change any details then please
+            <a href="{{{restaurant.contact-url}}}">contact the restaurant</a> or go online to <a href="{{{booking
+          .cancel}}}">cancel your booking</a> if you can no longer make it.</p>
+        <p>Please <strong>don't reply to this email</strong> as the address is unmonitored.</p>
+    </div>
+
+    <div class="mail-footer">
+
+        <!-- Signature -->
+        <div class="sig">
+            <p>Many thanks from</p>
+            <div class="logo"><img src="assets/imgs/logo-white-@2x.png" title="The Bookatable Team"></div>
+        </div>
+
+        <!-- Social -->
+        <div class="links-social">
+            <a href="#facebook" class="social"><img src="assets/imgs/social-facebook.png"></a>
+            <a href="#facebook" class="social"><img src="assets/imgs/social-twitter.png"></a>
+        </div>
+
+    </div>
+</div>
+
