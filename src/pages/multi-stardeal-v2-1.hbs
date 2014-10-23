@@ -1,6 +1,6 @@
 ---
-title:      Star Deal Light
-desc:       Default daily Star Deal template
+title:      Mulit Star Deal V2.1
+desc:       Hybrid Star Deal template - Star Deal Light + Multi-Star Deal templates
 region:     London
 culture:    en-GB
 layout:     bookatable-default
@@ -126,29 +126,36 @@ layout:     bookatable-default
 </table>
 <!-- STAR DEAL LIGHT CONTENT -->
 
-	{{> divider }}
-
-<!-- VIEW ALL BANNER -->
-<table border="0" cellpadding="0" cellspacing="0" class="row">
-    <tr>
-        <td class="wrapper last">                  
-          {{> stardeal-banner-beta }}
-        </td>
-    </tr>
-</table>
-<!-- VIEW ALL BANNER -->
-
 {{> divider }}
 
 <!-- PREFERENCE -->
 <table border="0" cellpadding="0" cellspacing="0" class="row">
     <tr>
         <td class="wrapper last">
-          {{> stardeal-pref }}
+        	<!-- {{> stardeal-pref }} -->
         </td>
     </tr>
 </table>
 <!-- PREFERENCE -->
 
+	{{> divider }}
+
+<!-- STAR DEAL ROUND UP -->
+
+{{> roundup-module-short }}
+
 {{> divider }}
 
+{{> roundup-module-long }}
+
+{{> divider }}
+
+{{> roundup-module-long }}
+
+{{> divider }}
+
+{{> stardeal-banner-beta }}
+
+{{> divider }}
+
+{{> stardeal-pref }}
